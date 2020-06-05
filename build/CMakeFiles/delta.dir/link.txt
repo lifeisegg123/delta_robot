@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdelta.a  CMakeFiles/delta.dir/src/deltaServo.cpp.o CMakeFiles/delta.dir/src/face_detection.cpp.o CMakeFiles/delta.dir/src/empy.cpp.o
+/usr/bin/ranlib libdelta.a

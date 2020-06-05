@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/lee/Desktop/workspace/deltarobot/build",
+  "command": "/usr/bin/g++-7   -I/usr/include/python3.6m -isystem /usr/local/include/opencv4 -I/home/lee/Desktop/workspace/deltarobot/include  -g   -std=gnu++11 -o CMakeFiles/deltaRB.dir/main.cpp.o -c /home/lee/Desktop/workspace/deltarobot/main.cpp",
+  "file": "/home/lee/Desktop/workspace/deltarobot/main.cpp"
+},
+{
+  "directory": "/home/lee/Desktop/workspace/deltarobot/build",
+  "command": "/usr/bin/g++-7   -I/usr/include/python3.6m -I/usr/local/include/opencv4 -I/home/lee/Desktop/workspace/deltarobot/include  -g   -o CMakeFiles/delta.dir/src/deltaServo.cpp.o -c /home/lee/Desktop/workspace/deltarobot/src/deltaServo.cpp",
+  "file": "/home/lee/Desktop/workspace/deltarobot/src/deltaServo.cpp"
+},
+{
+  "directory": "/home/lee/Desktop/workspace/deltarobot/build",
+  "command": "/usr/bin/g++-7   -I/usr/include/python3.6m -I/usr/local/include/opencv4 -I/home/lee/Desktop/workspace/deltarobot/include  -g   -o CMakeFiles/delta.dir/src/face_detection.cpp.o -c /home/lee/Desktop/workspace/deltarobot/src/face_detection.cpp",
+  "file": "/home/lee/Desktop/workspace/deltarobot/src/face_detection.cpp"
+},
+{
+  "directory": "/home/lee/Desktop/workspace/deltarobot/build",
+  "command": "/usr/bin/g++-7   -I/usr/include/python3.6m -I/usr/local/include/opencv4 -I/home/lee/Desktop/workspace/deltarobot/include  -g   -o CMakeFiles/delta.dir/src/empy.cpp.o -c /home/lee/Desktop/workspace/deltarobot/src/empy.cpp",
+  "file": "/home/lee/Desktop/workspace/deltarobot/src/empy.cpp"
+}
+]
