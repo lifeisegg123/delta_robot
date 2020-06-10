@@ -1,8 +1,12 @@
 #ifndef empy
 #define empy
 
+
 #define PY_SSIZE_T_CLEAN
-#include <Python.h>
+#pragma push_macro("slots")
+#undef slots
+#include "Python.h"
+#pragma pop_macro("slots")
 #include <iostream>
 #include <array>
 
@@ -13,8 +17,9 @@ namespace delta
         public:
             EmPy();
             void getPy();
+            int connectBoard();
             int epMoveMotor();
-            int epReference();
+            int epMoveValues();
             void setAngles(const std::array<double, 3> angles);
             ~EmPy();
             

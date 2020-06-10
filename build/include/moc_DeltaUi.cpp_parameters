@@ -1,0 +1,5 @@
+-I/usr/include/python3.6m
+-I/usr/local/include/opencv4
+-o
+/home/lee/Desktop/workspace/deltarobot/build/include/moc_DeltaUi.cpp
+/home/lee/Desktop/workspace/deltarobot/include/DeltaUi.h

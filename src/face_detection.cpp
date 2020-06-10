@@ -22,21 +22,6 @@ namespace delta
             cerr << "Net open failed!" << endl;
             return -1;
         }
-		while(1)
-		{
-			getImage();
-			detectFace();
-			if (showImages() == 0)
-			{
-				break;
-			}
-			searchPixel();
-			if (showImages() == 0)
-			{
-				break;
-			}
-		}
-
 	}
     int FaceDetector::getImage()
     {
@@ -116,8 +101,10 @@ namespace delta
 					p[k] = 0;
 					int row_c = j;
 					int col_c = k;
+
 					motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_DOWN);
 					motor.moveMotor();
+					
 					bool endwhile = true;
 					while(endwhile)
 					{
@@ -157,5 +144,13 @@ namespace delta
 		imshow("src", frame);
 		if (waitKey(1) == 27)
 			return 0;
+	}
+	Mat FaceDetector::getFrame()const
+	{
+		return frame;
+	}
+	Mat FaceDetector::getDst()const
+	{
+		return dst;
 	}
 }

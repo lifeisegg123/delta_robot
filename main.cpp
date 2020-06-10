@@ -1,8 +1,12 @@
-#include "face_detection.h"
+#include "DeltaUi.h"
+#include <QApplication>
 
-int main() 
+int main(int argc, char *argv[])
 {
-    delta::FaceDetector *fd = new delta::FaceDetector();
-    fd->init();
-    delete fd;
+    QApplication app(argc, argv);
+
+    delta::DeltaUi* test = new delta::DeltaUi;
+    test->show();
+
+    return app.exec();
 }

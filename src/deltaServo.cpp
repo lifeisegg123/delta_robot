@@ -3,6 +3,7 @@ namespace delta{
     DeltaMotor::DeltaMotor()
     {
         py.getPy();
+        py.connectBoard();
     }
 
     std::array<double, 2> DeltaMotor::angle_yz(const double x0, double y0, const double z0, double theta) const

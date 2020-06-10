@@ -1,2 +1,2 @@
-/usr/bin/ar qc libdelta.a  CMakeFiles/delta.dir/src/deltaServo.cpp.o CMakeFiles/delta.dir/src/face_detection.cpp.o CMakeFiles/delta.dir/src/empy.cpp.o
+/usr/bin/ar qc libdelta.a  CMakeFiles/delta.dir/src/deltaServo.cpp.o CMakeFiles/delta.dir/src/face_detection.cpp.o CMakeFiles/delta.dir/src/empy.cpp.o CMakeFiles/delta.dir/src/DeltaUi.cpp.o CMakeFiles/delta.dir/include/moc_DeltaUi.cpp.o CMakeFiles/delta.dir/delta_autogen/mocs_compilation.cpp.o
 /usr/bin/ranlib libdelta.a

@@ -533,6 +533,113 @@ ExperimentalBuild/fast:
 	$(MAKE) -f CMakeFiles/ExperimentalBuild.dir/build.make CMakeFiles/ExperimentalBuild.dir/build
 .PHONY : ExperimentalBuild/fast
 
+#=============================================================================
+# Target rules for targets named deltaRB_autogen
+
+# Build rule for target.
+deltaRB_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 deltaRB_autogen
+.PHONY : deltaRB_autogen
+
+# fast build rule for target.
+deltaRB_autogen/fast:
+	$(MAKE) -f CMakeFiles/deltaRB_autogen.dir/build.make CMakeFiles/deltaRB_autogen.dir/build
+.PHONY : deltaRB_autogen/fast
+
+#=============================================================================
+# Target rules for targets named delta_autogen
+
+# Build rule for target.
+delta_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 delta_autogen
+.PHONY : delta_autogen
+
+# fast build rule for target.
+delta_autogen/fast:
+	$(MAKE) -f CMakeFiles/delta_autogen.dir/build.make CMakeFiles/delta_autogen.dir/build
+.PHONY : delta_autogen/fast
+
+deltaRB_autogen/mocs_compilation.o: deltaRB_autogen/mocs_compilation.cpp.o
+
+.PHONY : deltaRB_autogen/mocs_compilation.o
+
+# target to build an object file
+deltaRB_autogen/mocs_compilation.cpp.o:
+	$(MAKE) -f CMakeFiles/deltaRB.dir/build.make CMakeFiles/deltaRB.dir/deltaRB_autogen/mocs_compilation.cpp.o
+.PHONY : deltaRB_autogen/mocs_compilation.cpp.o
+
+deltaRB_autogen/mocs_compilation.i: deltaRB_autogen/mocs_compilation.cpp.i
+
+.PHONY : deltaRB_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+deltaRB_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles/deltaRB.dir/build.make CMakeFiles/deltaRB.dir/deltaRB_autogen/mocs_compilation.cpp.i
+.PHONY : deltaRB_autogen/mocs_compilation.cpp.i
+
+deltaRB_autogen/mocs_compilation.s: deltaRB_autogen/mocs_compilation.cpp.s
+
+.PHONY : deltaRB_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+deltaRB_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles/deltaRB.dir/build.make CMakeFiles/deltaRB.dir/deltaRB_autogen/mocs_compilation.cpp.s
+.PHONY : deltaRB_autogen/mocs_compilation.cpp.s
+
+delta_autogen/mocs_compilation.o: delta_autogen/mocs_compilation.cpp.o
+
+.PHONY : delta_autogen/mocs_compilation.o
+
+# target to build an object file
+delta_autogen/mocs_compilation.cpp.o:
+	$(MAKE) -f CMakeFiles/delta.dir/build.make CMakeFiles/delta.dir/delta_autogen/mocs_compilation.cpp.o
+.PHONY : delta_autogen/mocs_compilation.cpp.o
+
+delta_autogen/mocs_compilation.i: delta_autogen/mocs_compilation.cpp.i
+
+.PHONY : delta_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+delta_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles/delta.dir/build.make CMakeFiles/delta.dir/delta_autogen/mocs_compilation.cpp.i
+.PHONY : delta_autogen/mocs_compilation.cpp.i
+
+delta_autogen/mocs_compilation.s: delta_autogen/mocs_compilation.cpp.s
+
+.PHONY : delta_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+delta_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles/delta.dir/build.make CMakeFiles/delta.dir/delta_autogen/mocs_compilation.cpp.s
+.PHONY : delta_autogen/mocs_compilation.cpp.s
+
+include/moc_DeltaUi.o: include/moc_DeltaUi.cpp.o
+
+.PHONY : include/moc_DeltaUi.o
+
+# target to build an object file
+include/moc_DeltaUi.cpp.o:
+	$(MAKE) -f CMakeFiles/delta.dir/build.make CMakeFiles/delta.dir/include/moc_DeltaUi.cpp.o
+.PHONY : include/moc_DeltaUi.cpp.o
+
+include/moc_DeltaUi.i: include/moc_DeltaUi.cpp.i
+
+.PHONY : include/moc_DeltaUi.i
+
+# target to preprocess a source file
+include/moc_DeltaUi.cpp.i:
+	$(MAKE) -f CMakeFiles/delta.dir/build.make CMakeFiles/delta.dir/include/moc_DeltaUi.cpp.i
+.PHONY : include/moc_DeltaUi.cpp.i
+
+include/moc_DeltaUi.s: include/moc_DeltaUi.cpp.s
+
+.PHONY : include/moc_DeltaUi.s
+
+# target to generate assembly for a file
+include/moc_DeltaUi.cpp.s:
+	$(MAKE) -f CMakeFiles/delta.dir/build.make CMakeFiles/delta.dir/include/moc_DeltaUi.cpp.s
+.PHONY : include/moc_DeltaUi.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -559,6 +666,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/deltaRB.dir/build.make CMakeFiles/deltaRB.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+src/DeltaUi.o: src/DeltaUi.cpp.o
+
+.PHONY : src/DeltaUi.o
+
+# target to build an object file
+src/DeltaUi.cpp.o:
+	$(MAKE) -f CMakeFiles/delta.dir/build.make CMakeFiles/delta.dir/src/DeltaUi.cpp.o
+.PHONY : src/DeltaUi.cpp.o
+
+src/DeltaUi.i: src/DeltaUi.cpp.i
+
+.PHONY : src/DeltaUi.i
+
+# target to preprocess a source file
+src/DeltaUi.cpp.i:
+	$(MAKE) -f CMakeFiles/delta.dir/build.make CMakeFiles/delta.dir/src/DeltaUi.cpp.i
+.PHONY : src/DeltaUi.cpp.i
+
+src/DeltaUi.s: src/DeltaUi.cpp.s
+
+.PHONY : src/DeltaUi.s
+
+# target to generate assembly for a file
+src/DeltaUi.cpp.s:
+	$(MAKE) -f CMakeFiles/delta.dir/build.make CMakeFiles/delta.dir/src/DeltaUi.cpp.s
+.PHONY : src/DeltaUi.cpp.s
 
 src/deltaServo.o: src/deltaServo.cpp.o
 
@@ -682,9 +816,23 @@ help:
 	@echo "... ContinuousTest"
 	@echo "... ContinuousUpdate"
 	@echo "... ExperimentalBuild"
+	@echo "... deltaRB_autogen"
+	@echo "... delta_autogen"
+	@echo "... deltaRB_autogen/mocs_compilation.o"
+	@echo "... deltaRB_autogen/mocs_compilation.i"
+	@echo "... deltaRB_autogen/mocs_compilation.s"
+	@echo "... delta_autogen/mocs_compilation.o"
+	@echo "... delta_autogen/mocs_compilation.i"
+	@echo "... delta_autogen/mocs_compilation.s"
+	@echo "... include/moc_DeltaUi.o"
+	@echo "... include/moc_DeltaUi.i"
+	@echo "... include/moc_DeltaUi.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/DeltaUi.o"
+	@echo "... src/DeltaUi.i"
+	@echo "... src/DeltaUi.s"
 	@echo "... src/deltaServo.o"
 	@echo "... src/deltaServo.i"
 	@echo "... src/deltaServo.s"

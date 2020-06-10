@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "deltaRB_autogen"
+  "CMakeFiles/deltaRB_autogen.dir/AutogenOldSettings.cmake"
+  "delta_autogen"
+  "CMakeFiles/delta_autogen.dir/AutogenOldSettings.cmake"
   "CMakeFiles/NightlyCoverage"
 )
 

@@ -21,6 +21,8 @@ namespace delta
         void putLabel(const float &confidence, const int &x, const int &y);
         void searchPixel();
         int showImages();
+        Mat getFrame() const;
+        Mat getDst() const;
 
     private:
         const String model = "../model/opencv_face_detector_uint8.pb";
@@ -32,6 +34,7 @@ namespace delta
 	    Rect faceRect;
 	    Mat face;
 	    Mat dst;
+
         DeltaMotor motor;
     };
 }

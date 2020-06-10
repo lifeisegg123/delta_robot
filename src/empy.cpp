@@ -8,14 +8,55 @@ namespace delta
         PyRun_SimpleString("sys.path.append(\"../py\")");
     }
 
+    int EmPy::connectBoard()
+    {
+        if (pModule != NULL) 
+        {
+            pFunc = PyObject_GetAttrString(pModule, "connectBoard");
+
+            if (pFunc && PyCallable_Check(pFunc))
+            {
+                pValue = PyObject_CallObject(pFunc, pArgs);
+                if (pValue) 
+                {
+                    printf("Board Connected\n");
+                    Py_DECREF(pValue);
+                }
+                
+                else 
+                {
+                    Py_DECREF(pFunc);
+                    Py_DECREF(pModule);
+
+                    PyErr_Print();
+                    fprintf(stderr,"Fail to connect\n");
+                    return -1;
+                }
+            }
+            else {
+                if (PyErr_Occurred())
+                    PyErr_Print();
+            }
+
+        
+            Py_XDECREF(pFunc);
+            Py_DECREF(pModule);
+        }
+        else 
+        {
+            PyErr_Print();
+            return -1;
+        }
+
+    }
+
     void EmPy::getPy()
     {
-        
         pName = PyUnicode_DecodeFSDefault("servo");
         pModule = PyImport_Import(pName);
         Py_DECREF(pName);
     }
-    int EmPy::epReference()
+    int EmPy::epMoveValues()
     {
         pArgs = PyTuple_New(3);
         for(int i = 0; i < 3; i++)
@@ -32,11 +73,8 @@ namespace delta
 
             PyTuple_SetItem(pArgs, i, pValue);
         }
-    
 
-        std::cout << "before" << std::endl;
         pValue = PyObject_CallObject(pFunc, pArgs);
-        std::cout << "after" << std::endl;
         Py_DECREF(pArgs);
         if (pValue) 
         {
@@ -63,9 +101,7 @@ namespace delta
 
             if (pFunc && PyCallable_Check(pFunc))
             {
-                
-                epReference();
-
+                epMoveValues();
             }
             else {
                 if (PyErr_Occurred())

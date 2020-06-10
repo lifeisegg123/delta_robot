@@ -33,3 +33,5 @@
 /home/lee/Desktop/workspace/deltarobot/build/CMakeFiles/ContinuousTest.dir
 /home/lee/Desktop/workspace/deltarobot/build/CMakeFiles/ContinuousUpdate.dir
 /home/lee/Desktop/workspace/deltarobot/build/CMakeFiles/ExperimentalBuild.dir
+/home/lee/Desktop/workspace/deltarobot/build/CMakeFiles/deltaRB_autogen.dir
+/home/lee/Desktop/workspace/deltarobot/build/CMakeFiles/delta_autogen.dir
