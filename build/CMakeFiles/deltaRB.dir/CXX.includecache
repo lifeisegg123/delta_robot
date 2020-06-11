@@ -35,8 +35,6 @@ QtWidgets/QWidget
 -
 
 ../include/deltaServo.h
-stdio.h
--
 math.h
 -
 array
@@ -47,16 +45,12 @@ empy.h
 ../include/empy.h
 Python.h
 ../include/Python.h
-iostream
--
 array
 -
 
 ../include/face_detection.h
 opencv2/opencv.hpp
 ../include/opencv2/opencv.hpp
-iostream
--
 deltaServo.h
 ../include/deltaServo.h
 

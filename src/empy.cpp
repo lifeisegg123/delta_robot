@@ -17,7 +17,7 @@ namespace delta
             if (pFunc && PyCallable_Check(pFunc))
             {
                 pValue = PyObject_CallObject(pFunc, pArgs);
-                if (pValue) 
+                if (PyLong_AsLong(pValue) == 1) 
                 {
                     printf("Board Connected\n");
                     Py_DECREF(pValue);

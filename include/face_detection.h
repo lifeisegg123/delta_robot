@@ -1,7 +1,6 @@
 #ifndef Face_Detection
 #define Face_detection
 #include "opencv2/opencv.hpp"
-#include <iostream>
 #include "deltaServo.h"
 
 using namespace cv;

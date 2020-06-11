@@ -1,6 +1,5 @@
 #ifndef Delta_motor
 #define Delta_motor
-#include <stdio.h>
 #include <math.h>
 #include <array>
 #include "empy.h"

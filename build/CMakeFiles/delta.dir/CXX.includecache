@@ -35,8 +35,6 @@ QtWidgets/QWidget
 -
 
 ../include/deltaServo.h
-stdio.h
--
 math.h
 -
 array
@@ -47,16 +45,12 @@ empy.h
 ../include/empy.h
 Python.h
 ../include/Python.h
-iostream
--
 array
 -
 
 ../include/face_detection.h
 opencv2/opencv.hpp
 ../include/opencv2/opencv.hpp
-iostream
--
 deltaServo.h
 ../include/deltaServo.h
 
@@ -99,8 +93,6 @@ QtWidgets/QWidget
 -
 
 /home/lee/Desktop/workspace/deltarobot/include/deltaServo.h
-stdio.h
--
 math.h
 -
 array
@@ -111,16 +103,12 @@ empy.h
 /home/lee/Desktop/workspace/deltarobot/include/empy.h
 Python.h
 /home/lee/Desktop/workspace/deltarobot/include/Python.h
-iostream
--
 array
 -
 
 /home/lee/Desktop/workspace/deltarobot/include/face_detection.h
 opencv2/opencv.hpp
 /home/lee/Desktop/workspace/deltarobot/include/opencv2/opencv.hpp
-iostream
--
 deltaServo.h
 /home/lee/Desktop/workspace/deltarobot/include/deltaServo.h
 

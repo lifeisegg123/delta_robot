@@ -7,7 +7,6 @@
 #undef slots
 #include "Python.h"
 #pragma pop_macro("slots")
-#include <iostream>
 #include <array>
 
 namespace delta
