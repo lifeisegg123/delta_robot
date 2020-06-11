@@ -97,7 +97,7 @@ namespace delta
     {
         if (pModule != NULL) 
         {
-            pFunc = PyObject_GetAttrString(pModule, "main");
+            pFunc = PyObject_GetAttrString(pModule, "moveServo");
 
             if (pFunc && PyCallable_Check(pFunc))
             {

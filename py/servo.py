@@ -23,7 +23,7 @@ def print_board_status():
     print("board status: unsupport board framware version")
 
 
-def settingBoard():
+def connectBoard():
 
   while board.begin() != board.STA_OK:    # Board begin and check board status
     print_board_status()
@@ -44,7 +44,7 @@ def moveServotest():
     servo1.move(board.ALL, 180)
     time.sleep(1)
 
-def movingServo(theta1, theta2, theta3):
+def moveServo(theta1, theta2, theta3):
 
 
     print("part servos move to 0")
