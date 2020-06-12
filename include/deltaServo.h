@@ -16,7 +16,7 @@ namespace delta
         float x, y, z;
     };
     enum zStatus{
-        Z_DOWN = -350,
+        Z_DOWN = -370,
         Z_UP = -315,
     };
     class DeltaMotor

@@ -102,7 +102,7 @@ namespace delta{
     {
         if(coordinates.z != z)
         {
-            speed = 0.01;
+            speed = 0.005;
         }
         else
         {

@@ -103,7 +103,6 @@ namespace delta
 					p[k] = 0;
 					int row_c = j;
 					int col_c = k;
-					int counter = 1;
 					/*
 					motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_UP);
 					motor.moveMotor();
@@ -111,6 +110,7 @@ namespace delta
 					motor.moveMotor();*/
 					
 					bool endwhile = true;
+					int counter = 1;
 					while(endwhile)
 					{
 						bool endflag = false;
@@ -143,19 +143,21 @@ namespace delta
 									endflag = true;
 									row_c += row;
 									col_c += col;
-									if(++counter == 3)
+									cout << "counter = " << counter << endl;
+									if(counter++ == 2)
 									{
+										cout << "horizontal" << endl;
 										motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_UP);
 										motor.moveMotor();
 										time_sleep(0.5);
 									}
-									if(counter <= 3)
+									else if(counter >= 3)
 									{
 										motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_DOWN);
 										motor.moveMotor();
 										*new_p = 0;
+										break;
 									}
-									break;
 								}
 							}
 							if (endflag)
