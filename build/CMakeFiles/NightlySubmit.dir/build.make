@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lee/Desktop/workspace/deltarobot
+CMAKE_SOURCE_DIR = /home/ubuntu/Desktop/delta_robot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lee/Desktop/workspace/deltarobot/build
+CMAKE_BINARY_DIR = /home/ubuntu/Desktop/delta_robot/build
 
 # Utility rule file for NightlySubmit.
 
@@ -71,6 +71,6 @@ CMakeFiles/NightlySubmit.dir/clean:
 .PHONY : CMakeFiles/NightlySubmit.dir/clean
 
 CMakeFiles/NightlySubmit.dir/depend:
-	cd /home/lee/Desktop/workspace/deltarobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lee/Desktop/workspace/deltarobot /home/lee/Desktop/workspace/deltarobot /home/lee/Desktop/workspace/deltarobot/build /home/lee/Desktop/workspace/deltarobot/build /home/lee/Desktop/workspace/deltarobot/build/CMakeFiles/NightlySubmit.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/Desktop/delta_robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/Desktop/delta_robot /home/ubuntu/Desktop/delta_robot /home/ubuntu/Desktop/delta_robot/build /home/ubuntu/Desktop/delta_robot/build /home/ubuntu/Desktop/delta_robot/build/CMakeFiles/NightlySubmit.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/NightlySubmit.dir/depend
 

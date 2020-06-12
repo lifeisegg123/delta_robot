@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lee/Desktop/workspace/deltarobot
+CMAKE_SOURCE_DIR = /home/ubuntu/Desktop/delta_robot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lee/Desktop/workspace/deltarobot/build
+CMAKE_BINARY_DIR = /home/ubuntu/Desktop/delta_robot/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -92,7 +92,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/lee/Desktop/workspace/deltarobot/build/CPackSourceConfig.cmake
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ubuntu/Desktop/delta_robot/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -113,9 +113,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lee/Desktop/workspace/deltarobot/build/CMakeFiles /home/lee/Desktop/workspace/deltarobot/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Desktop/delta_robot/build/CMakeFiles /home/ubuntu/Desktop/delta_robot/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lee/Desktop/workspace/deltarobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Desktop/delta_robot/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -721,33 +721,6 @@ src/deltaServo.cpp.s:
 	$(MAKE) -f CMakeFiles/delta.dir/build.make CMakeFiles/delta.dir/src/deltaServo.cpp.s
 .PHONY : src/deltaServo.cpp.s
 
-src/empy.o: src/empy.cpp.o
-
-.PHONY : src/empy.o
-
-# target to build an object file
-src/empy.cpp.o:
-	$(MAKE) -f CMakeFiles/delta.dir/build.make CMakeFiles/delta.dir/src/empy.cpp.o
-.PHONY : src/empy.cpp.o
-
-src/empy.i: src/empy.cpp.i
-
-.PHONY : src/empy.i
-
-# target to preprocess a source file
-src/empy.cpp.i:
-	$(MAKE) -f CMakeFiles/delta.dir/build.make CMakeFiles/delta.dir/src/empy.cpp.i
-.PHONY : src/empy.cpp.i
-
-src/empy.s: src/empy.cpp.s
-
-.PHONY : src/empy.s
-
-# target to generate assembly for a file
-src/empy.cpp.s:
-	$(MAKE) -f CMakeFiles/delta.dir/build.make CMakeFiles/delta.dir/src/empy.cpp.s
-.PHONY : src/empy.cpp.s
-
 src/face_detection.o: src/face_detection.cpp.o
 
 .PHONY : src/face_detection.o
@@ -836,9 +809,6 @@ help:
 	@echo "... src/deltaServo.o"
 	@echo "... src/deltaServo.i"
 	@echo "... src/deltaServo.s"
-	@echo "... src/empy.o"
-	@echo "... src/empy.i"
-	@echo "... src/empy.s"
 	@echo "... src/face_detection.o"
 	@echo "... src/face_detection.i"
 	@echo "... src/face_detection.s"

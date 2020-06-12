@@ -1,9 +1,18 @@
 #include "deltaServo.h"
+#include <iostream>
 namespace delta{
     DeltaMotor::DeltaMotor()
     {
-        py.getPy();
-        py.connectBoard();
+        if (gpioInitialise() < 0)
+        {
+            fprintf(stderr, "pigpio initialisation failed\n");
+        }
+
+        gpioSetMode(MOTOR1, PI_OUTPUT);
+        gpioSetMode(MOTOR2, PI_OUTPUT);
+        gpioSetMode(MOTOR3, PI_OUTPUT);
+
+       
     }
 
     std::array<double, 2> DeltaMotor::angle_yz(const double x0, double y0, const double z0, double theta) const
@@ -48,19 +57,53 @@ namespace delta{
         return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
     }
     
+    void DeltaMotor::set2Zero()
+    {
+        gpioServo(MOTOR1, map(0));
+        gpioServo(MOTOR2, map(9));
+        gpioServo(MOTOR3, map(0));
+        time_sleep(2);
+    }
     
     void DeltaMotor::moveMotor()
     {
+
+        std::array<double,3> pre;
         std::array<double,3> angles = inverse(coordinates.x,coordinates.y,coordinates.z);
-        py.setAngles(angles);
-        py.epMoveMotor();
+        std::cout << "new" << std::endl;
+        for (auto i : angles)
+        {
+            std::cout << i << std::endl;
+
+        }
+        pre[0] = map(gpioGetServoPulsewidth(MOTOR1), 600, 2400, -90, 90);
+        pre[1] = map(gpioGetServoPulsewidth(MOTOR2), 600, 2400, -90, 90);
+        pre[2] = map(gpioGetServoPulsewidth(MOTOR3), 600, 2400, -90, 90);
+        std::cout << gpioGetServoPulsewidth(MOTOR1) << std::endl;
+        std::array<double, 3> diff = {angles[0] - pre[0], angles[1] - pre[1], angles[2] - pre[2]};
+        std::cout << "pre" << std::endl;
+
+        for (auto i : pre)
+        {
+            std::cout << i << std::endl;
+        }
+        for (int i = 1; i < 101; i++)
+        {
+            gpioServo(MOTOR1, map(pre[0] + diff[0] * i / 100));
+            gpioServo(MOTOR2, map(pre[1] + diff[1] * i / 100));
+            gpioServo(MOTOR3, map(pre[2] + diff[2] * i / 100));
+            time_sleep(0.001);
+        }
+        std::cout << std::endl;
     }
     void DeltaMotor::setMotorXYZ(const float x, const float y, const float z)
     {
         coordinates.x = x;
         coordinates.y = y;
         coordinates.z = z;
+        std::cout << "x = " << x << "y = " << y << "z = " << z << std::endl;
     }
+    
     DeltaMotor::~DeltaMotor()
     {
 

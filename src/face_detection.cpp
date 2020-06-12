@@ -84,12 +84,13 @@ namespace delta
     void FaceDetector::putLabel(const float &confidence, const int &x, const int &y)
     {
         rectangle(frame, faceRect, Scalar(0, 255, 0));
-        String label = format("Face: %4.3f", confidence);
-        putText(frame, label, Point(x, y+30), FONT_HERSHEY_SIMPLEX, 0.8, Scalar(0, 255, 0));
+        //String label = format("Face: %4.3f", confidence);
+        //putText(frame, label, Point(x, y+30), FONT_HERSHEY_SIMPLEX, 0.8, Scalar(0, 255, 0));
 
     }
 	void FaceDetector::searchPixel()
 	{
+		motor.set2Zero();
 		for (int j = 0; j < face.rows; j++)
 		{
 			uchar* p = dst.ptr<uchar>(j);

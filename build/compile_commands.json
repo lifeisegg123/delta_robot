@@ -1,42 +1,37 @@
 [
 {
-  "directory": "/home/lee/Desktop/workspace/deltarobot/build",
-  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/lee/Desktop/workspace/deltarobot/build/deltaRB_autogen/include -I/usr/include/python3.6m -isystem /usr/local/include/opencv4 -I/home/lee/Desktop/workspace/deltarobot/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets  -g   -fPIC -std=gnu++11 -o CMakeFiles/deltaRB.dir/main.cpp.o -c /home/lee/Desktop/workspace/deltarobot/main.cpp",
-  "file": "/home/lee/Desktop/workspace/deltarobot/main.cpp"
+  "directory": "/home/ubuntu/Desktop/delta_robot/build",
+  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/ubuntu/Desktop/delta_robot/build/deltaRB_autogen/include -I/usr/include/python3.6m -isystem /usr/local/include/opencv4 -I/home/ubuntu/Desktop/delta_robot/include -isystem /usr/include/aarch64-linux-gnu/qt5 -isystem /usr/include/aarch64-linux-gnu/qt5/QtCore -isystem /usr/lib/aarch64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/aarch64-linux-gnu/qt5/QtGui -isystem /usr/include/aarch64-linux-gnu/qt5/QtWidgets  -g   -fPIC -std=gnu++11 -o CMakeFiles/deltaRB.dir/main.cpp.o -c /home/ubuntu/Desktop/delta_robot/main.cpp",
+  "file": "/home/ubuntu/Desktop/delta_robot/main.cpp"
 },
 {
-  "directory": "/home/lee/Desktop/workspace/deltarobot/build",
-  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/lee/Desktop/workspace/deltarobot/build/deltaRB_autogen/include -I/usr/include/python3.6m -isystem /usr/local/include/opencv4 -I/home/lee/Desktop/workspace/deltarobot/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets  -g   -fPIC -std=gnu++11 -o CMakeFiles/deltaRB.dir/deltaRB_autogen/mocs_compilation.cpp.o -c /home/lee/Desktop/workspace/deltarobot/build/deltaRB_autogen/mocs_compilation.cpp",
-  "file": "/home/lee/Desktop/workspace/deltarobot/build/deltaRB_autogen/mocs_compilation.cpp"
+  "directory": "/home/ubuntu/Desktop/delta_robot/build",
+  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/ubuntu/Desktop/delta_robot/build/deltaRB_autogen/include -I/usr/include/python3.6m -isystem /usr/local/include/opencv4 -I/home/ubuntu/Desktop/delta_robot/include -isystem /usr/include/aarch64-linux-gnu/qt5 -isystem /usr/include/aarch64-linux-gnu/qt5/QtCore -isystem /usr/lib/aarch64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/aarch64-linux-gnu/qt5/QtGui -isystem /usr/include/aarch64-linux-gnu/qt5/QtWidgets  -g   -fPIC -std=gnu++11 -o CMakeFiles/deltaRB.dir/deltaRB_autogen/mocs_compilation.cpp.o -c /home/ubuntu/Desktop/delta_robot/build/deltaRB_autogen/mocs_compilation.cpp",
+  "file": "/home/ubuntu/Desktop/delta_robot/build/deltaRB_autogen/mocs_compilation.cpp"
 },
 {
-  "directory": "/home/lee/Desktop/workspace/deltarobot/build",
-  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/lee/Desktop/workspace/deltarobot/build/delta_autogen/include -I/usr/include/python3.6m -I/usr/local/include/opencv4 -I/home/lee/Desktop/workspace/deltarobot/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets  -g   -fPIC -std=gnu++11 -o CMakeFiles/delta.dir/src/deltaServo.cpp.o -c /home/lee/Desktop/workspace/deltarobot/src/deltaServo.cpp",
-  "file": "/home/lee/Desktop/workspace/deltarobot/src/deltaServo.cpp"
+  "directory": "/home/ubuntu/Desktop/delta_robot/build",
+  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/ubuntu/Desktop/delta_robot/build/delta_autogen/include -I/usr/include/python3.6m -I/usr/local/include/opencv4 -I/home/ubuntu/Desktop/delta_robot/include -isystem /usr/include/aarch64-linux-gnu/qt5 -isystem /usr/include/aarch64-linux-gnu/qt5/QtCore -isystem /usr/lib/aarch64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/aarch64-linux-gnu/qt5/QtGui -isystem /usr/include/aarch64-linux-gnu/qt5/QtWidgets  -g   -fPIC -std=gnu++11 -o CMakeFiles/delta.dir/src/deltaServo.cpp.o -c /home/ubuntu/Desktop/delta_robot/src/deltaServo.cpp",
+  "file": "/home/ubuntu/Desktop/delta_robot/src/deltaServo.cpp"
 },
 {
-  "directory": "/home/lee/Desktop/workspace/deltarobot/build",
-  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/lee/Desktop/workspace/deltarobot/build/delta_autogen/include -I/usr/include/python3.6m -I/usr/local/include/opencv4 -I/home/lee/Desktop/workspace/deltarobot/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets  -g   -fPIC -std=gnu++11 -o CMakeFiles/delta.dir/src/face_detection.cpp.o -c /home/lee/Desktop/workspace/deltarobot/src/face_detection.cpp",
-  "file": "/home/lee/Desktop/workspace/deltarobot/src/face_detection.cpp"
+  "directory": "/home/ubuntu/Desktop/delta_robot/build",
+  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/ubuntu/Desktop/delta_robot/build/delta_autogen/include -I/usr/include/python3.6m -I/usr/local/include/opencv4 -I/home/ubuntu/Desktop/delta_robot/include -isystem /usr/include/aarch64-linux-gnu/qt5 -isystem /usr/include/aarch64-linux-gnu/qt5/QtCore -isystem /usr/lib/aarch64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/aarch64-linux-gnu/qt5/QtGui -isystem /usr/include/aarch64-linux-gnu/qt5/QtWidgets  -g   -fPIC -std=gnu++11 -o CMakeFiles/delta.dir/src/face_detection.cpp.o -c /home/ubuntu/Desktop/delta_robot/src/face_detection.cpp",
+  "file": "/home/ubuntu/Desktop/delta_robot/src/face_detection.cpp"
 },
 {
-  "directory": "/home/lee/Desktop/workspace/deltarobot/build",
-  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/lee/Desktop/workspace/deltarobot/build/delta_autogen/include -I/usr/include/python3.6m -I/usr/local/include/opencv4 -I/home/lee/Desktop/workspace/deltarobot/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets  -g   -fPIC -std=gnu++11 -o CMakeFiles/delta.dir/src/empy.cpp.o -c /home/lee/Desktop/workspace/deltarobot/src/empy.cpp",
-  "file": "/home/lee/Desktop/workspace/deltarobot/src/empy.cpp"
+  "directory": "/home/ubuntu/Desktop/delta_robot/build",
+  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/ubuntu/Desktop/delta_robot/build/delta_autogen/include -I/usr/include/python3.6m -I/usr/local/include/opencv4 -I/home/ubuntu/Desktop/delta_robot/include -isystem /usr/include/aarch64-linux-gnu/qt5 -isystem /usr/include/aarch64-linux-gnu/qt5/QtCore -isystem /usr/lib/aarch64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/aarch64-linux-gnu/qt5/QtGui -isystem /usr/include/aarch64-linux-gnu/qt5/QtWidgets  -g   -fPIC -std=gnu++11 -o CMakeFiles/delta.dir/src/DeltaUi.cpp.o -c /home/ubuntu/Desktop/delta_robot/src/DeltaUi.cpp",
+  "file": "/home/ubuntu/Desktop/delta_robot/src/DeltaUi.cpp"
 },
 {
-  "directory": "/home/lee/Desktop/workspace/deltarobot/build",
-  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/lee/Desktop/workspace/deltarobot/build/delta_autogen/include -I/usr/include/python3.6m -I/usr/local/include/opencv4 -I/home/lee/Desktop/workspace/deltarobot/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets  -g   -fPIC -std=gnu++11 -o CMakeFiles/delta.dir/src/DeltaUi.cpp.o -c /home/lee/Desktop/workspace/deltarobot/src/DeltaUi.cpp",
-  "file": "/home/lee/Desktop/workspace/deltarobot/src/DeltaUi.cpp"
+  "directory": "/home/ubuntu/Desktop/delta_robot/build",
+  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/ubuntu/Desktop/delta_robot/build/delta_autogen/include -I/usr/include/python3.6m -I/usr/local/include/opencv4 -I/home/ubuntu/Desktop/delta_robot/include -isystem /usr/include/aarch64-linux-gnu/qt5 -isystem /usr/include/aarch64-linux-gnu/qt5/QtCore -isystem /usr/lib/aarch64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/aarch64-linux-gnu/qt5/QtGui -isystem /usr/include/aarch64-linux-gnu/qt5/QtWidgets  -g   -fPIC -std=gnu++11 -o CMakeFiles/delta.dir/include/moc_DeltaUi.cpp.o -c /home/ubuntu/Desktop/delta_robot/build/include/moc_DeltaUi.cpp",
+  "file": "/home/ubuntu/Desktop/delta_robot/build/include/moc_DeltaUi.cpp"
 },
 {
-  "directory": "/home/lee/Desktop/workspace/deltarobot/build",
-  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/lee/Desktop/workspace/deltarobot/build/delta_autogen/include -I/usr/include/python3.6m -I/usr/local/include/opencv4 -I/home/lee/Desktop/workspace/deltarobot/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets  -g   -fPIC -std=gnu++11 -o CMakeFiles/delta.dir/include/moc_DeltaUi.cpp.o -c /home/lee/Desktop/workspace/deltarobot/build/include/moc_DeltaUi.cpp",
-  "file": "/home/lee/Desktop/workspace/deltarobot/build/include/moc_DeltaUi.cpp"
-},
-{
-  "directory": "/home/lee/Desktop/workspace/deltarobot/build",
-  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/lee/Desktop/workspace/deltarobot/build/delta_autogen/include -I/usr/include/python3.6m -I/usr/local/include/opencv4 -I/home/lee/Desktop/workspace/deltarobot/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets  -g   -fPIC -std=gnu++11 -o CMakeFiles/delta.dir/delta_autogen/mocs_compilation.cpp.o -c /home/lee/Desktop/workspace/deltarobot/build/delta_autogen/mocs_compilation.cpp",
-  "file": "/home/lee/Desktop/workspace/deltarobot/build/delta_autogen/mocs_compilation.cpp"
+  "directory": "/home/ubuntu/Desktop/delta_robot/build",
+  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/ubuntu/Desktop/delta_robot/build/delta_autogen/include -I/usr/include/python3.6m -I/usr/local/include/opencv4 -I/home/ubuntu/Desktop/delta_robot/include -isystem /usr/include/aarch64-linux-gnu/qt5 -isystem /usr/include/aarch64-linux-gnu/qt5/QtCore -isystem /usr/lib/aarch64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/aarch64-linux-gnu/qt5/QtGui -isystem /usr/include/aarch64-linux-gnu/qt5/QtWidgets  -g   -fPIC -std=gnu++11 -o CMakeFiles/delta.dir/delta_autogen/mocs_compilation.cpp.o -c /home/ubuntu/Desktop/delta_robot/build/delta_autogen/mocs_compilation.cpp",
+  "file": "/home/ubuntu/Desktop/delta_robot/build/delta_autogen/mocs_compilation.cpp"
 }
 ]

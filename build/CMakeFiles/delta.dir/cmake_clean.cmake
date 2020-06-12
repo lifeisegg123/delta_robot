@@ -7,7 +7,6 @@ file(REMOVE_RECURSE
   "ui_delta.h"
   "CMakeFiles/delta.dir/src/deltaServo.cpp.o"
   "CMakeFiles/delta.dir/src/face_detection.cpp.o"
-  "CMakeFiles/delta.dir/src/empy.cpp.o"
   "CMakeFiles/delta.dir/src/DeltaUi.cpp.o"
   "CMakeFiles/delta.dir/include/moc_DeltaUi.cpp.o"
   "CMakeFiles/delta.dir/delta_autogen/mocs_compilation.cpp.o"

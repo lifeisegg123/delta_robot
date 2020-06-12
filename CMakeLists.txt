@@ -22,8 +22,8 @@ set(CMAKE_AUTOMOC ON)
 
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
-add_library(delta src/deltaServo.cpp src/face_detection.cpp src/empy.cpp src/DeltaUi ${moc_sources} ${uic_sources})
-target_link_libraries(delta Qt5::Core Qt5::Gui Qt5::Widgets)
+add_library(delta src/deltaServo.cpp src/face_detection.cpp src/DeltaUi ${moc_sources} ${uic_sources})
+target_link_libraries(delta Qt5::Core Qt5::Gui Qt5::Widgets rt pigpio)
 
 add_executable(deltaRB main.cpp )
 target_link_libraries(deltaRB delta ${OpenCV_LIBS} ${PYTHON_LIBRARIES} Qt5::Core Qt5::Gui Qt5::Widgets)
