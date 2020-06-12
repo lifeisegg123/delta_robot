@@ -16,8 +16,8 @@ namespace delta
         float x, y, z;
     };
     enum zStatus{
-        Z_DOWN = -300,
-        Z_UP = -260,
+        Z_DOWN = -350,
+        Z_UP = -315,
     };
     class DeltaMotor
     {
@@ -43,10 +43,10 @@ namespace delta
 
         const int e  =  24;
         const int f  =  75;
-        const int re = 300;
+        const float re = 314.6;
         const int rf = 100;
         
-
+        float speed;
         Points coordinates;
     };
 }

@@ -59,15 +59,16 @@ namespace delta{
     
     void DeltaMotor::set2Zero()
     {
+        setMotorXYZ(0, 0, Z_UP);
         gpioServo(MOTOR1, map(0));
-        gpioServo(MOTOR2, map(9));
+        gpioServo(MOTOR2, map(0));
         gpioServo(MOTOR3, map(0));
         time_sleep(2);
     }
     
     void DeltaMotor::moveMotor()
     {
-
+        
         std::array<double,3> pre;
         std::array<double,3> angles = inverse(coordinates.x,coordinates.y,coordinates.z);
         std::cout << "new" << std::endl;
@@ -92,12 +93,21 @@ namespace delta{
             gpioServo(MOTOR1, map(pre[0] + diff[0] * i / 100));
             gpioServo(MOTOR2, map(pre[1] + diff[1] * i / 100));
             gpioServo(MOTOR3, map(pre[2] + diff[2] * i / 100));
-            time_sleep(0.001);
+            time_sleep(speed);
         }
+        std::cout<< "speed = " << speed << std::endl;
         std::cout << std::endl;
     }
     void DeltaMotor::setMotorXYZ(const float x, const float y, const float z)
     {
+        if(coordinates.z != z)
+        {
+            speed = 0.01;
+        }
+        else
+        {
+            speed = 0.001;
+        }
         coordinates.x = x;
         coordinates.y = y;
         coordinates.z = z;

@@ -43,10 +43,10 @@ namespace delta
 			if (confidence > 0.5)
 			{
 
-				int x1 = cvRound(detect.at<float>(i, 3) * frame.cols - 30);
-				int y1 = cvRound(detect.at<float>(i, 4) * frame.rows - 30);
-				int x2 = cvRound(detect.at<float>(i, 5) * frame.cols + 30);
-				int y2 = cvRound(detect.at<float>(i, 6) * frame.rows + 30);
+				int x1 = cvRound(detect.at<float>(i, 3) * frame.cols - 15);
+				int y1 = cvRound(detect.at<float>(i, 4) * frame.rows - 15);
+				int x2 = cvRound(detect.at<float>(i, 5) * frame.cols + 15);
+				int y2 = cvRound(detect.at<float>(i, 6) * frame.rows + 15);
 				
 				if (x1 <= 0)
 				{
@@ -79,7 +79,9 @@ namespace delta
     {
         face = frame(faceRect);
         cvtColor(face, dst, COLOR_BGR2GRAY);
-        Canny(dst, dst, 50, 150);
+		GaussianBlur(dst, dst, Size(5, 5), 7);
+        Canny(dst, dst, 70, 150);
+		morphologyEx(dst, dst, MORPH_GRADIENT, getStructuringElement(MORPH_CROSS, Size(3, 3)));
     }
     void FaceDetector::putLabel(const float &confidence, const int &x, const int &y)
     {
@@ -99,30 +101,60 @@ namespace delta
 				if ((int)p[k] == 255)
 				{
 					p[k] = 0;
-					p[k] = 0;
 					int row_c = j;
 					int col_c = k;
-
-					motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_DOWN);
+					int counter = 1;
+					/*
+					motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_UP);
 					motor.moveMotor();
+					motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_DOWN);
+					motor.moveMotor();*/
 					
 					bool endwhile = true;
 					while(endwhile)
 					{
 						bool endflag = false;
-						for (int row = -1; row < 2; row++)
+						for (int row = -2; row < 3; row++)
 						{
-							for (int col = -1; col < 2; col++)
+							for (int col = -2; col < 3; col++)
 							{
-								uchar* new_p = dst.ptr<uchar>(row_c + row, col_c + col);
-								if ((int)*new_p ==255)
+								int row_t = row_c + row, col_t = col_c + col;
+
+								if (row_t < 0)
+								{
+									row_t = 0;
+								}
+								else if (row_t > dst.rows)
+								{
+									row_t = dst.rows;
+								}
+								if (col_t < 0)
+								{
+									col_t = 0;
+								}
+								else if (col_t > dst.cols)
+								{
+									col_t = dst.cols;
+								}
+
+								uchar* new_p = dst.ptr<uchar>(row_t, col_t);
+								if ((int)*new_p == 255)
 								{
 									endflag = true;
 									row_c += row;
 									col_c += col;
-									motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_DOWN);
-									motor.moveMotor();
-									*new_p = 0;
+									if(++counter == 3)
+									{
+										motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_UP);
+										motor.moveMotor();
+										time_sleep(0.5);
+									}
+									if(counter <= 3)
+									{
+										motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_DOWN);
+										motor.moveMotor();
+										*new_p = 0;
+									}
 									break;
 								}
 							}
@@ -133,8 +165,14 @@ namespace delta
 						}
 						endwhile = endflag;
 					}
-					motor.setMotorXYZ(0, 0, Z_UP);
+					motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_UP);
 					motor.moveMotor();
+					time_sleep(0.5);
+					//motor.setMotorXYZ(0, 0, Z_UP);
+					//motor.moveMotor();
+					imshow("dst", dst);
+					while(waitKey() == 27)
+					{}
 				}
 			}
 		}

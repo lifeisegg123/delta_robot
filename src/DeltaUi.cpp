@@ -11,7 +11,7 @@ namespace delta
     {
         fd->getImage();
         fd->detectFace();
-        Mat frame = fd->getFrame();
+        Mat frame = fd->getDst();
         Mat2QImage(frame);
         QGraphicsScene* scene = new QGraphicsScene(this);
         picture->setScene(scene);
