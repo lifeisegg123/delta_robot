@@ -22,7 +22,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "delta_autogen/include"
-  "/usr/include/python3.6m"
   "/usr/local/include/opencv4"
   "../include"
   "/usr/include/aarch64-linux-gnu/qt5"

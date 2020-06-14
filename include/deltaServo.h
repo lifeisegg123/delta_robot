@@ -16,14 +16,14 @@ namespace delta
         float x, y, z;
     };
     enum zStatus{
-        Z_DOWN = -370,
-        Z_UP = -315,
+        Z_DOWN = -368,
+        Z_UP = -345,
     };
     class DeltaMotor
     {
     public:
         DeltaMotor();
-        float map(const float x, const float in_min = -90, const float in_max = 90, const float out_min = 600, const float out_max = 2400) const;
+        float map(const float x, const float in_min = 90, const float in_max = -90, const float out_min = 600, const float out_max = 2400) const;
         std::array<double, 2> angle_yz(const double x0, double y0, const double z0, double theta = 0) const;
         std::array<double, 3> inverse(const double x0, const double y0, const double z0) const;
         void moveMotor();

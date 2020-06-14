@@ -144,6 +144,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named visiontst
+
+# Build rule for target.
+visiontst: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visiontst
+.PHONY : visiontst
+
+# fast build rule for target.
+visiontst/fast:
+	$(MAKE) -f CMakeFiles/visiontst.dir/build.make CMakeFiles/visiontst.dir/build
+.PHONY : visiontst/fast
+
+#=============================================================================
 # Target rules for targets named deltaRB
 
 # Build rule for target.
@@ -534,6 +547,19 @@ ExperimentalBuild/fast:
 .PHONY : ExperimentalBuild/fast
 
 #=============================================================================
+# Target rules for targets named visiontst_autogen
+
+# Build rule for target.
+visiontst_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visiontst_autogen
+.PHONY : visiontst_autogen
+
+# fast build rule for target.
+visiontst_autogen/fast:
+	$(MAKE) -f CMakeFiles/visiontst_autogen.dir/build.make CMakeFiles/visiontst_autogen.dir/build
+.PHONY : visiontst_autogen/fast
+
+#=============================================================================
 # Target rules for targets named deltaRB_autogen
 
 # Build rule for target.
@@ -748,6 +774,60 @@ src/face_detection.cpp.s:
 	$(MAKE) -f CMakeFiles/delta.dir/build.make CMakeFiles/delta.dir/src/face_detection.cpp.s
 .PHONY : src/face_detection.cpp.s
 
+vision_test.o: vision_test.cpp.o
+
+.PHONY : vision_test.o
+
+# target to build an object file
+vision_test.cpp.o:
+	$(MAKE) -f CMakeFiles/visiontst.dir/build.make CMakeFiles/visiontst.dir/vision_test.cpp.o
+.PHONY : vision_test.cpp.o
+
+vision_test.i: vision_test.cpp.i
+
+.PHONY : vision_test.i
+
+# target to preprocess a source file
+vision_test.cpp.i:
+	$(MAKE) -f CMakeFiles/visiontst.dir/build.make CMakeFiles/visiontst.dir/vision_test.cpp.i
+.PHONY : vision_test.cpp.i
+
+vision_test.s: vision_test.cpp.s
+
+.PHONY : vision_test.s
+
+# target to generate assembly for a file
+vision_test.cpp.s:
+	$(MAKE) -f CMakeFiles/visiontst.dir/build.make CMakeFiles/visiontst.dir/vision_test.cpp.s
+.PHONY : vision_test.cpp.s
+
+visiontst_autogen/mocs_compilation.o: visiontst_autogen/mocs_compilation.cpp.o
+
+.PHONY : visiontst_autogen/mocs_compilation.o
+
+# target to build an object file
+visiontst_autogen/mocs_compilation.cpp.o:
+	$(MAKE) -f CMakeFiles/visiontst.dir/build.make CMakeFiles/visiontst.dir/visiontst_autogen/mocs_compilation.cpp.o
+.PHONY : visiontst_autogen/mocs_compilation.cpp.o
+
+visiontst_autogen/mocs_compilation.i: visiontst_autogen/mocs_compilation.cpp.i
+
+.PHONY : visiontst_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+visiontst_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles/visiontst.dir/build.make CMakeFiles/visiontst.dir/visiontst_autogen/mocs_compilation.cpp.i
+.PHONY : visiontst_autogen/mocs_compilation.cpp.i
+
+visiontst_autogen/mocs_compilation.s: visiontst_autogen/mocs_compilation.cpp.s
+
+.PHONY : visiontst_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+visiontst_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles/visiontst.dir/build.make CMakeFiles/visiontst.dir/visiontst_autogen/mocs_compilation.cpp.s
+.PHONY : visiontst_autogen/mocs_compilation.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -756,6 +836,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... visiontst"
 	@echo "... package"
 	@echo "... deltaRB"
 	@echo "... ContinuousSubmit"
@@ -789,6 +870,7 @@ help:
 	@echo "... ContinuousTest"
 	@echo "... ContinuousUpdate"
 	@echo "... ExperimentalBuild"
+	@echo "... visiontst_autogen"
 	@echo "... deltaRB_autogen"
 	@echo "... delta_autogen"
 	@echo "... deltaRB_autogen/mocs_compilation.o"
@@ -812,6 +894,12 @@ help:
 	@echo "... src/face_detection.o"
 	@echo "... src/face_detection.i"
 	@echo "... src/face_detection.s"
+	@echo "... vision_test.o"
+	@echo "... vision_test.i"
+	@echo "... vision_test.s"
+	@echo "... visiontst_autogen/mocs_compilation.o"
+	@echo "... visiontst_autogen/mocs_compilation.i"
+	@echo "... visiontst_autogen/mocs_compilation.s"
 .PHONY : help
 
 

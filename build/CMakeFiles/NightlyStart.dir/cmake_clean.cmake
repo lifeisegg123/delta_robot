@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "visiontst_autogen"
+  "CMakeFiles/visiontst_autogen.dir/AutogenOldSettings.cmake"
   "deltaRB_autogen"
   "CMakeFiles/deltaRB_autogen.dir/AutogenOldSettings.cmake"
   "delta_autogen"

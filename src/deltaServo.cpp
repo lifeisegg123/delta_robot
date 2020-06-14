@@ -63,7 +63,7 @@ namespace delta{
         gpioServo(MOTOR1, map(0));
         gpioServo(MOTOR2, map(0));
         gpioServo(MOTOR3, map(0));
-        time_sleep(2);
+        time_sleep(1);
     }
     
     void DeltaMotor::moveMotor()
@@ -77,9 +77,9 @@ namespace delta{
             std::cout << i << std::endl;
 
         }
-        pre[0] = map(gpioGetServoPulsewidth(MOTOR1), 600, 2400, -90, 90);
-        pre[1] = map(gpioGetServoPulsewidth(MOTOR2), 600, 2400, -90, 90);
-        pre[2] = map(gpioGetServoPulsewidth(MOTOR3), 600, 2400, -90, 90);
+        pre[0] = map(gpioGetServoPulsewidth(MOTOR1), 600, 2400, 90, -90);
+        pre[1] = map(gpioGetServoPulsewidth(MOTOR2), 600, 2400, 90, -90);
+        pre[2] = map(gpioGetServoPulsewidth(MOTOR3), 600, 2400, 90, -90);
         std::cout << gpioGetServoPulsewidth(MOTOR1) << std::endl;
         std::array<double, 3> diff = {angles[0] - pre[0], angles[1] - pre[1], angles[2] - pre[2]};
         std::cout << "pre" << std::endl;
@@ -88,13 +88,18 @@ namespace delta{
         {
             std::cout << i << std::endl;
         }
-        for (int i = 1; i < 101; i++)
+        /*for (int i = 1; i < 1001; i++)
         {
-            gpioServo(MOTOR1, map(pre[0] + diff[0] * i / 100));
-            gpioServo(MOTOR2, map(pre[1] + diff[1] * i / 100));
-            gpioServo(MOTOR3, map(pre[2] + diff[2] * i / 100));
+            gpioServo(MOTOR1, map(pre[0] + diff[0] * i / 1000));
+            gpioServo(MOTOR2, map(pre[1] + diff[1] * i / 1000));
+            gpioServo(MOTOR3, map(pre[2] + diff[2] * i / 1000));
             time_sleep(speed);
-        }
+        }*/
+        gpioServo(MOTOR1, map(angles[0]));
+        gpioServo(MOTOR2, map(angles[1]));
+        gpioServo(MOTOR3, map(angles[2]));
+        time_sleep(0.1);
+        
         std::cout<< "speed = " << speed << std::endl;
         std::cout << std::endl;
     }

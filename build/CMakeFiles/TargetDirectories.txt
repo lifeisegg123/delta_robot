@@ -1,5 +1,6 @@
 /home/ubuntu/Desktop/delta_robot/build/CMakeFiles/rebuild_cache.dir
 /home/ubuntu/Desktop/delta_robot/build/CMakeFiles/test.dir
+/home/ubuntu/Desktop/delta_robot/build/CMakeFiles/visiontst.dir
 /home/ubuntu/Desktop/delta_robot/build/CMakeFiles/package.dir
 /home/ubuntu/Desktop/delta_robot/build/CMakeFiles/deltaRB.dir
 /home/ubuntu/Desktop/delta_robot/build/CMakeFiles/ContinuousSubmit.dir
@@ -33,5 +34,6 @@
 /home/ubuntu/Desktop/delta_robot/build/CMakeFiles/ContinuousTest.dir
 /home/ubuntu/Desktop/delta_robot/build/CMakeFiles/ContinuousUpdate.dir
 /home/ubuntu/Desktop/delta_robot/build/CMakeFiles/ExperimentalBuild.dir
+/home/ubuntu/Desktop/delta_robot/build/CMakeFiles/visiontst_autogen.dir
 /home/ubuntu/Desktop/delta_robot/build/CMakeFiles/deltaRB_autogen.dir
 /home/ubuntu/Desktop/delta_robot/build/CMakeFiles/delta_autogen.dir

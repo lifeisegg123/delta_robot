@@ -79,9 +79,11 @@ namespace delta
     {
         face = frame(faceRect);
         cvtColor(face, dst, COLOR_BGR2GRAY);
-		GaussianBlur(dst, dst, Size(5, 5), 7);
-        Canny(dst, dst, 70, 150);
-		morphologyEx(dst, dst, MORPH_GRADIENT, getStructuringElement(MORPH_CROSS, Size(3, 3)));
+		equalizeHist(dst, dst);
+		GaussianBlur(dst, dst, Size(3, 3), 5);
+        Canny(dst, dst, 80, 160);
+		//morphologyEx(dst, dst, MORPH_GRADIENT, getStructuringElement(MORPH_CROSS, Size(3, 3)));
+		
     }
     void FaceDetector::putLabel(const float &confidence, const int &x, const int &y)
     {
@@ -172,9 +174,9 @@ namespace delta
 					time_sleep(0.5);
 					//motor.setMotorXYZ(0, 0, Z_UP);
 					//motor.moveMotor();
-					imshow("dst", dst);
+					/*imshow("dst", dst);
 					while(waitKey() == 27)
-					{}
+					{}*/
 				}
 			}
 		}

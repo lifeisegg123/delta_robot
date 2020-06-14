@@ -60,6 +60,43 @@ CMAKE_SOURCE_DIR = /home/ubuntu/Desktop/delta_robot
 CMAKE_BINARY_DIR = /home/ubuntu/Desktop/delta_robot/build
 
 #=============================================================================
+# Target rules for target CMakeFiles/visiontst.dir
+
+# All Build rule for target.
+CMakeFiles/visiontst.dir/all: CMakeFiles/visiontst_autogen.dir/all
+	$(MAKE) -f CMakeFiles/visiontst.dir/build.make CMakeFiles/visiontst.dir/depend
+	$(MAKE) -f CMakeFiles/visiontst.dir/build.make CMakeFiles/visiontst.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Desktop/delta_robot/build/CMakeFiles --progress-num=14,15,16 "Built target visiontst"
+.PHONY : CMakeFiles/visiontst.dir/all
+
+# Include target in all.
+all: CMakeFiles/visiontst.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/visiontst.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Desktop/delta_robot/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/visiontst.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Desktop/delta_robot/build/CMakeFiles 0
+.PHONY : CMakeFiles/visiontst.dir/rule
+
+# Convenience name for target.
+visiontst: CMakeFiles/visiontst.dir/rule
+
+.PHONY : visiontst
+
+# clean rule for target.
+CMakeFiles/visiontst.dir/clean:
+	$(MAKE) -f CMakeFiles/visiontst.dir/build.make CMakeFiles/visiontst.dir/clean
+.PHONY : CMakeFiles/visiontst.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/visiontst.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/deltaRB.dir
 
 # All Build rule for target.
@@ -1027,6 +1064,38 @@ CMakeFiles/ExperimentalBuild.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/ExperimentalBuild.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/visiontst_autogen.dir
+
+# All Build rule for target.
+CMakeFiles/visiontst_autogen.dir/all:
+	$(MAKE) -f CMakeFiles/visiontst_autogen.dir/build.make CMakeFiles/visiontst_autogen.dir/depend
+	$(MAKE) -f CMakeFiles/visiontst_autogen.dir/build.make CMakeFiles/visiontst_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Desktop/delta_robot/build/CMakeFiles --progress-num=17 "Built target visiontst_autogen"
+.PHONY : CMakeFiles/visiontst_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/visiontst_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Desktop/delta_robot/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/visiontst_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Desktop/delta_robot/build/CMakeFiles 0
+.PHONY : CMakeFiles/visiontst_autogen.dir/rule
+
+# Convenience name for target.
+visiontst_autogen: CMakeFiles/visiontst_autogen.dir/rule
+
+.PHONY : visiontst_autogen
+
+# clean rule for target.
+CMakeFiles/visiontst_autogen.dir/clean:
+	$(MAKE) -f CMakeFiles/visiontst_autogen.dir/build.make CMakeFiles/visiontst_autogen.dir/clean
+.PHONY : CMakeFiles/visiontst_autogen.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/visiontst_autogen.dir/clean
 
 .PHONY : clean
 
