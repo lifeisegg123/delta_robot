@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/Desktop/delta_robot
+CMAKE_SOURCE_DIR = /home/lee/Desktop/workspace/delta_robot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/Desktop/delta_robot/build
+CMAKE_BINARY_DIR = /home/lee/Desktop/workspace/delta_robot/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -92,7 +92,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ubuntu/Desktop/delta_robot/build/CPackSourceConfig.cmake
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/lee/Desktop/workspace/delta_robot/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -113,9 +113,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Desktop/delta_robot/build/CMakeFiles /home/ubuntu/Desktop/delta_robot/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lee/Desktop/workspace/delta_robot/build/CMakeFiles /home/lee/Desktop/workspace/delta_robot/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Desktop/delta_robot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lee/Desktop/workspace/delta_robot/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

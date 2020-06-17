@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/Desktop/delta_robot
+CMAKE_SOURCE_DIR = /home/lee/Desktop/workspace/delta_robot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/Desktop/delta_robot/build
+CMAKE_BINARY_DIR = /home/lee/Desktop/workspace/delta_robot/build
 
 # Utility rule file for visiontst_autogen.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/ubuntu/Desktop/delta_robot/build
 include CMakeFiles/visiontst_autogen.dir/progress.make
 
 CMakeFiles/visiontst_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Desktop/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target visiontst"
-	/usr/bin/cmake -E cmake_autogen /home/ubuntu/Desktop/delta_robot/build/CMakeFiles/visiontst_autogen.dir Debug
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target visiontst"
+	/usr/bin/cmake -E cmake_autogen /home/lee/Desktop/workspace/delta_robot/build/CMakeFiles/visiontst_autogen.dir Debug
 
 visiontst_autogen: CMakeFiles/visiontst_autogen
 visiontst_autogen: CMakeFiles/visiontst_autogen.dir/build.make
@@ -72,6 +72,6 @@ CMakeFiles/visiontst_autogen.dir/clean:
 .PHONY : CMakeFiles/visiontst_autogen.dir/clean
 
 CMakeFiles/visiontst_autogen.dir/depend:
-	cd /home/ubuntu/Desktop/delta_robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/Desktop/delta_robot /home/ubuntu/Desktop/delta_robot /home/ubuntu/Desktop/delta_robot/build /home/ubuntu/Desktop/delta_robot/build /home/ubuntu/Desktop/delta_robot/build/CMakeFiles/visiontst_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lee/Desktop/workspace/delta_robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lee/Desktop/workspace/delta_robot /home/lee/Desktop/workspace/delta_robot /home/lee/Desktop/workspace/delta_robot/build /home/lee/Desktop/workspace/delta_robot/build /home/lee/Desktop/workspace/delta_robot/build/CMakeFiles/visiontst_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/visiontst_autogen.dir/depend
 

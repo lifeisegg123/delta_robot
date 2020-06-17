@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/Desktop/delta_robot
+CMAKE_SOURCE_DIR = /home/lee/Desktop/workspace/delta_robot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/Desktop/delta_robot/build
+CMAKE_BINARY_DIR = /home/lee/Desktop/workspace/delta_robot/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/deltaRB.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/deltaRB.dir/flags.make
 
 CMakeFiles/deltaRB.dir/main.cpp.o: CMakeFiles/deltaRB.dir/flags.make
 CMakeFiles/deltaRB.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/deltaRB.dir/main.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/deltaRB.dir/main.cpp.o -c /home/ubuntu/Desktop/delta_robot/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/deltaRB.dir/main.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/deltaRB.dir/main.cpp.o -c /home/lee/Desktop/workspace/delta_robot/main.cpp
 
 CMakeFiles/deltaRB.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/deltaRB.dir/main.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Desktop/delta_robot/main.cpp > CMakeFiles/deltaRB.dir/main.cpp.i
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lee/Desktop/workspace/delta_robot/main.cpp > CMakeFiles/deltaRB.dir/main.cpp.i
 
 CMakeFiles/deltaRB.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/deltaRB.dir/main.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Desktop/delta_robot/main.cpp -o CMakeFiles/deltaRB.dir/main.cpp.s
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lee/Desktop/workspace/delta_robot/main.cpp -o CMakeFiles/deltaRB.dir/main.cpp.s
 
 CMakeFiles/deltaRB.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/deltaRB.dir/main.cpp.o.provides.build: CMakeFiles/deltaRB.dir/main.cp
 
 CMakeFiles/deltaRB.dir/deltaRB_autogen/mocs_compilation.cpp.o: CMakeFiles/deltaRB.dir/flags.make
 CMakeFiles/deltaRB.dir/deltaRB_autogen/mocs_compilation.cpp.o: deltaRB_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/deltaRB.dir/deltaRB_autogen/mocs_compilation.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/deltaRB.dir/deltaRB_autogen/mocs_compilation.cpp.o -c /home/ubuntu/Desktop/delta_robot/build/deltaRB_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/deltaRB.dir/deltaRB_autogen/mocs_compilation.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/deltaRB.dir/deltaRB_autogen/mocs_compilation.cpp.o -c /home/lee/Desktop/workspace/delta_robot/build/deltaRB_autogen/mocs_compilation.cpp
 
 CMakeFiles/deltaRB.dir/deltaRB_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/deltaRB.dir/deltaRB_autogen/mocs_compilation.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Desktop/delta_robot/build/deltaRB_autogen/mocs_compilation.cpp > CMakeFiles/deltaRB.dir/deltaRB_autogen/mocs_compilation.cpp.i
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lee/Desktop/workspace/delta_robot/build/deltaRB_autogen/mocs_compilation.cpp > CMakeFiles/deltaRB.dir/deltaRB_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/deltaRB.dir/deltaRB_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/deltaRB.dir/deltaRB_autogen/mocs_compilation.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Desktop/delta_robot/build/deltaRB_autogen/mocs_compilation.cpp -o CMakeFiles/deltaRB.dir/deltaRB_autogen/mocs_compilation.cpp.s
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lee/Desktop/workspace/delta_robot/build/deltaRB_autogen/mocs_compilation.cpp -o CMakeFiles/deltaRB.dir/deltaRB_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/deltaRB.dir/deltaRB_autogen/mocs_compilation.cpp.o.requires:
 
@@ -148,10 +148,10 @@ deltaRB: /usr/local/lib/libopencv_videostab.so.4.3.0
 deltaRB: /usr/local/lib/libopencv_xfeatures2d.so.4.3.0
 deltaRB: /usr/local/lib/libopencv_xobjdetect.so.4.3.0
 deltaRB: /usr/local/lib/libopencv_xphoto.so.4.3.0
-deltaRB: /usr/lib/aarch64-linux-gnu/libQt5Widgets.so.5.9.5
-deltaRB: /usr/lib/aarch64-linux-gnu/libpython3.6m.so
-deltaRB: /usr/lib/aarch64-linux-gnu/libQt5Gui.so.5.9.5
-deltaRB: /usr/lib/aarch64-linux-gnu/libQt5Core.so.5.9.5
+deltaRB: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.9.5
+deltaRB: /usr/lib/x86_64-linux-gnu/libpython3.6m.so
+deltaRB: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.9.5
+deltaRB: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5
 deltaRB: /usr/local/lib/libopencv_shape.so.4.3.0
 deltaRB: /usr/local/lib/libopencv_highgui.so.4.3.0
 deltaRB: /usr/local/lib/libopencv_datasets.so.4.3.0
@@ -173,7 +173,7 @@ deltaRB: /usr/local/lib/libopencv_photo.so.4.3.0
 deltaRB: /usr/local/lib/libopencv_imgproc.so.4.3.0
 deltaRB: /usr/local/lib/libopencv_core.so.4.3.0
 deltaRB: CMakeFiles/deltaRB.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/Desktop/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable deltaRB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable deltaRB"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/deltaRB.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -191,6 +191,6 @@ CMakeFiles/deltaRB.dir/clean:
 .PHONY : CMakeFiles/deltaRB.dir/clean
 
 CMakeFiles/deltaRB.dir/depend:
-	cd /home/ubuntu/Desktop/delta_robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/Desktop/delta_robot /home/ubuntu/Desktop/delta_robot /home/ubuntu/Desktop/delta_robot/build /home/ubuntu/Desktop/delta_robot/build /home/ubuntu/Desktop/delta_robot/build/CMakeFiles/deltaRB.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lee/Desktop/workspace/delta_robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lee/Desktop/workspace/delta_robot /home/lee/Desktop/workspace/delta_robot /home/lee/Desktop/workspace/delta_robot/build /home/lee/Desktop/workspace/delta_robot/build /home/lee/Desktop/workspace/delta_robot/build/CMakeFiles/deltaRB.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/deltaRB.dir/depend
 

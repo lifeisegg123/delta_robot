@@ -27,7 +27,7 @@ namespace delta
             std::array<double, 3> angles = {0, 0, 0};
             bool splitor;
 
-            PyObject *pName, *pModule, *pFunc;
+            PyObject *pName, *pModule, *pFunc, *pMove;
             PyObject *pArgs, *pValue;
     };
 }

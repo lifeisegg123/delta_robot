@@ -2,6 +2,46 @@
 #include <iostream>
 namespace delta
 {
+    int EmPy::connectBoard()
+    {
+        if(pModule) 
+        {
+            PyObject* connectBoard = PyObject_GetAttrString(pModule, "connectBoard");
+
+            if(connectBoard) 
+            {
+                PyObject *r = PyObject_CallFunction(connectBoard, NULL);
+
+                if (r == Py_None)
+                {
+                    printf("None is returned.\n");
+                    Py_XDECREF(r);
+                }
+
+                Py_XDECREF(connectBoard);
+            }
+            //Py_XDECREF(pModule);
+        }
+    }
+    int EmPy::epMoveMotor()
+    {
+        if(pModule) 
+        {
+            PyObject* moveServo = PyObject_GetAttrString(pModule, "moveServo");
+
+            if(moveServo) 
+            {
+            PyObject *r = PyObject_CallFunction(moveServo, "iii", 0, 0, 0);
+
+            if(r) 
+            {
+                Py_XDECREF(r);
+            }
+            Py_XDECREF(moveServo);
+            }
+            //Py_XDECREF(mydef);
+        }
+    }
     EmPy::EmPy()
     {
         Py_Initialize();
@@ -15,10 +55,10 @@ namespace delta
         pModule = PyImport_Import(pName);
         Py_DECREF(pName);
     }
-
+/*
     int EmPy::connectBoard()
     {
-        if (pModule != NULL) 
+        if (pModule != NULL)
         {
             pFunc = PyObject_GetAttrString(pModule, "connectBoard");
 
@@ -48,7 +88,7 @@ namespace delta
 
         
             Py_XDECREF(pFunc);
-            Py_DECREF(pModule);
+            //Py_DECREF(pModule);
         }
         else 
         {
@@ -96,7 +136,7 @@ namespace delta
         else 
         {
             Py_DECREF(pFunc);
-            Py_DECREF(pModule);
+            //Py_DECREF(pModule);
 
             PyErr_Print();
             fprintf(stderr,"Move Call failed\n");
@@ -121,7 +161,7 @@ namespace delta
 
         
             Py_XDECREF(pFunc);
-            Py_DECREF(pModule);
+            //Py_DECREF(pModule);
         }
         else 
         {
@@ -129,7 +169,7 @@ namespace delta
             return -1;
         }
 
-    }
+    }*/
 
     void EmPy::setAngles(const std::array<double, 3> angles, bool splitor)
     {

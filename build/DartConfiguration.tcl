@@ -4,14 +4,14 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/ubuntu/Desktop/delta_robot
-BuildDirectory: /home/ubuntu/Desktop/delta_robot/build
+SourceDirectory: /home/lee/Desktop/workspace/delta_robot
+BuildDirectory: /home/lee/Desktop/workspace/delta_robot/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: ubuntu
+Site: lee-XH58
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Linux-g++-7
@@ -36,7 +36,7 @@ ScpCommand: /usr/bin/scp
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/ubuntu/Desktop/delta_robot"
+ConfigureCommand: "/usr/bin/cmake" "/home/lee/Desktop/workspace/delta_robot"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
