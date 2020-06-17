@@ -3,16 +3,8 @@
 namespace delta{
     DeltaMotor::DeltaMotor()
     {
-        if (gpioInitialise() < 0)
-        {
-            fprintf(stderr, "pigpio initialisation failed\n");
-        }
-
-        gpioSetMode(MOTOR1, PI_OUTPUT);
-        gpioSetMode(MOTOR2, PI_OUTPUT);
-        gpioSetMode(MOTOR3, PI_OUTPUT);
-
-       
+       py.getPy();
+       py.connectBoard();
     }
 
     std::array<double, 2> DeltaMotor::angle_yz(const double x0, double y0, const double z0, double theta) const
@@ -50,69 +42,35 @@ namespace delta{
         std::array<double, 3> res = {theta1, theta2, theta3};
         return res;
     }
-
-
-    float DeltaMotor::map(const float x, const float in_min, const float in_max, const float out_min, const float out_max) const
-    {
-        return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-    }
-    
     void DeltaMotor::set2Zero()
     {
-        setMotorXYZ(0, 0, Z_UP);
-        gpioServo(MOTOR1, map(0));
-        gpioServo(MOTOR2, map(0));
-        gpioServo(MOTOR3, map(0));
-        time_sleep(1);
+        py.epMoveMotor();
     }
     
     void DeltaMotor::moveMotor()
     {
         
-        std::array<double,3> pre;
         std::array<double,3> angles = inverse(coordinates.x,coordinates.y,coordinates.z);
         std::cout << "new" << std::endl;
         for (auto i : angles)
         {
             std::cout << i << std::endl;
-
         }
-        pre[0] = map(gpioGetServoPulsewidth(MOTOR1), 600, 2400, 90, -90);
-        pre[1] = map(gpioGetServoPulsewidth(MOTOR2), 600, 2400, 90, -90);
-        pre[2] = map(gpioGetServoPulsewidth(MOTOR3), 600, 2400, 90, -90);
-        std::cout << gpioGetServoPulsewidth(MOTOR1) << std::endl;
-        std::array<double, 3> diff = {angles[0] - pre[0], angles[1] - pre[1], angles[2] - pre[2]};
-        std::cout << "pre" << std::endl;
 
-        for (auto i : pre)
-        {
-            std::cout << i << std::endl;
-        }
-        /*for (int i = 1; i < 1001; i++)
-        {
-            gpioServo(MOTOR1, map(pre[0] + diff[0] * i / 1000));
-            gpioServo(MOTOR2, map(pre[1] + diff[1] * i / 1000));
-            gpioServo(MOTOR3, map(pre[2] + diff[2] * i / 1000));
-            time_sleep(speed);
-        }*/
-        gpioServo(MOTOR1, map(angles[0]));
-        gpioServo(MOTOR2, map(angles[1]));
-        gpioServo(MOTOR3, map(angles[2]));
-        time_sleep(0.1);
-        
-        std::cout<< "speed = " << speed << std::endl;
-        std::cout << std::endl;
+        py.setAngles(angles, splitor);
+        py.epMoveMotor();
     }
     void DeltaMotor::setMotorXYZ(const float x, const float y, const float z)
     {
-        if(coordinates.z != z)
+        if(coordinates.z == Z_UP && z == Z_DOWN)
         {
-            speed = 0.005;
+            splitor = true;
         }
         else
         {
-            speed = 0.001;
+            splitor = false;
         }
+        
         coordinates.x = x;
         coordinates.y = y;
         coordinates.z = z;
@@ -120,7 +78,5 @@ namespace delta{
     }
     
     DeltaMotor::~DeltaMotor()
-    {
-
-    }
+    {}
 }

@@ -327,7 +327,7 @@ deltaRB_BINARY_DIR:STATIC=/home/ubuntu/Desktop/delta_robot/build
 deltaRB_SOURCE_DIR:STATIC=/home/ubuntu/Desktop/delta_robot
 
 //Dependencies for the target
-delta_LIB_DEPENDS:STATIC=general;Qt5::Core;general;Qt5::Gui;general;Qt5::Widgets;general;rt;general;pigpio;
+delta_LIB_DEPENDS:STATIC=general;Qt5::Core;general;Qt5::Gui;general;Qt5::Widgets;
 
 
 ########################

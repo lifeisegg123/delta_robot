@@ -113,9 +113,33 @@ CMakeFiles/delta.dir/src/face_detection.cpp.o.provides: CMakeFiles/delta.dir/src
 CMakeFiles/delta.dir/src/face_detection.cpp.o.provides.build: CMakeFiles/delta.dir/src/face_detection.cpp.o
 
 
+CMakeFiles/delta.dir/src/empy.cpp.o: CMakeFiles/delta.dir/flags.make
+CMakeFiles/delta.dir/src/empy.cpp.o: ../src/empy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/delta.dir/src/empy.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/delta.dir/src/empy.cpp.o -c /home/ubuntu/Desktop/delta_robot/src/empy.cpp
+
+CMakeFiles/delta.dir/src/empy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/delta.dir/src/empy.cpp.i"
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Desktop/delta_robot/src/empy.cpp > CMakeFiles/delta.dir/src/empy.cpp.i
+
+CMakeFiles/delta.dir/src/empy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/delta.dir/src/empy.cpp.s"
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Desktop/delta_robot/src/empy.cpp -o CMakeFiles/delta.dir/src/empy.cpp.s
+
+CMakeFiles/delta.dir/src/empy.cpp.o.requires:
+
+.PHONY : CMakeFiles/delta.dir/src/empy.cpp.o.requires
+
+CMakeFiles/delta.dir/src/empy.cpp.o.provides: CMakeFiles/delta.dir/src/empy.cpp.o.requires
+	$(MAKE) -f CMakeFiles/delta.dir/build.make CMakeFiles/delta.dir/src/empy.cpp.o.provides.build
+.PHONY : CMakeFiles/delta.dir/src/empy.cpp.o.provides
+
+CMakeFiles/delta.dir/src/empy.cpp.o.provides.build: CMakeFiles/delta.dir/src/empy.cpp.o
+
+
 CMakeFiles/delta.dir/src/DeltaUi.cpp.o: CMakeFiles/delta.dir/flags.make
 CMakeFiles/delta.dir/src/DeltaUi.cpp.o: ../src/DeltaUi.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/delta.dir/src/DeltaUi.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/delta.dir/src/DeltaUi.cpp.o"
 	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/delta.dir/src/DeltaUi.cpp.o -c /home/ubuntu/Desktop/delta_robot/src/DeltaUi.cpp
 
 CMakeFiles/delta.dir/src/DeltaUi.cpp.i: cmake_force
@@ -139,7 +163,7 @@ CMakeFiles/delta.dir/src/DeltaUi.cpp.o.provides.build: CMakeFiles/delta.dir/src/
 
 CMakeFiles/delta.dir/include/moc_DeltaUi.cpp.o: CMakeFiles/delta.dir/flags.make
 CMakeFiles/delta.dir/include/moc_DeltaUi.cpp.o: include/moc_DeltaUi.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/delta.dir/include/moc_DeltaUi.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/delta.dir/include/moc_DeltaUi.cpp.o"
 	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/delta.dir/include/moc_DeltaUi.cpp.o -c /home/ubuntu/Desktop/delta_robot/build/include/moc_DeltaUi.cpp
 
 CMakeFiles/delta.dir/include/moc_DeltaUi.cpp.i: cmake_force
@@ -163,7 +187,7 @@ CMakeFiles/delta.dir/include/moc_DeltaUi.cpp.o.provides.build: CMakeFiles/delta.
 
 CMakeFiles/delta.dir/delta_autogen/mocs_compilation.cpp.o: CMakeFiles/delta.dir/flags.make
 CMakeFiles/delta.dir/delta_autogen/mocs_compilation.cpp.o: delta_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/delta.dir/delta_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/delta.dir/delta_autogen/mocs_compilation.cpp.o"
 	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/delta.dir/delta_autogen/mocs_compilation.cpp.o -c /home/ubuntu/Desktop/delta_robot/build/delta_autogen/mocs_compilation.cpp
 
 CMakeFiles/delta.dir/delta_autogen/mocs_compilation.cpp.i: cmake_force
@@ -189,6 +213,7 @@ CMakeFiles/delta.dir/delta_autogen/mocs_compilation.cpp.o.provides.build: CMakeF
 delta_OBJECTS = \
 "CMakeFiles/delta.dir/src/deltaServo.cpp.o" \
 "CMakeFiles/delta.dir/src/face_detection.cpp.o" \
+"CMakeFiles/delta.dir/src/empy.cpp.o" \
 "CMakeFiles/delta.dir/src/DeltaUi.cpp.o" \
 "CMakeFiles/delta.dir/include/moc_DeltaUi.cpp.o" \
 "CMakeFiles/delta.dir/delta_autogen/mocs_compilation.cpp.o"
@@ -198,12 +223,13 @@ delta_EXTERNAL_OBJECTS =
 
 libdelta.a: CMakeFiles/delta.dir/src/deltaServo.cpp.o
 libdelta.a: CMakeFiles/delta.dir/src/face_detection.cpp.o
+libdelta.a: CMakeFiles/delta.dir/src/empy.cpp.o
 libdelta.a: CMakeFiles/delta.dir/src/DeltaUi.cpp.o
 libdelta.a: CMakeFiles/delta.dir/include/moc_DeltaUi.cpp.o
 libdelta.a: CMakeFiles/delta.dir/delta_autogen/mocs_compilation.cpp.o
 libdelta.a: CMakeFiles/delta.dir/build.make
 libdelta.a: CMakeFiles/delta.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/Desktop/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libdelta.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/Desktop/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libdelta.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/delta.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/delta.dir/link.txt --verbose=$(VERBOSE)
 
@@ -214,6 +240,7 @@ CMakeFiles/delta.dir/build: libdelta.a
 
 CMakeFiles/delta.dir/requires: CMakeFiles/delta.dir/src/deltaServo.cpp.o.requires
 CMakeFiles/delta.dir/requires: CMakeFiles/delta.dir/src/face_detection.cpp.o.requires
+CMakeFiles/delta.dir/requires: CMakeFiles/delta.dir/src/empy.cpp.o.requires
 CMakeFiles/delta.dir/requires: CMakeFiles/delta.dir/src/DeltaUi.cpp.o.requires
 CMakeFiles/delta.dir/requires: CMakeFiles/delta.dir/include/moc_DeltaUi.cpp.o.requires
 CMakeFiles/delta.dir/requires: CMakeFiles/delta.dir/delta_autogen/mocs_compilation.cpp.o.requires

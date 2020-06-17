@@ -149,6 +149,7 @@ deltaRB: /usr/local/lib/libopencv_xfeatures2d.so.4.3.0
 deltaRB: /usr/local/lib/libopencv_xobjdetect.so.4.3.0
 deltaRB: /usr/local/lib/libopencv_xphoto.so.4.3.0
 deltaRB: /usr/lib/aarch64-linux-gnu/libQt5Widgets.so.5.9.5
+deltaRB: /usr/lib/aarch64-linux-gnu/libpython3.6m.so
 deltaRB: /usr/lib/aarch64-linux-gnu/libQt5Gui.so.5.9.5
 deltaRB: /usr/lib/aarch64-linux-gnu/libQt5Core.so.5.9.5
 deltaRB: /usr/local/lib/libopencv_shape.so.4.3.0

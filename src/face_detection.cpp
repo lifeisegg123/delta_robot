@@ -79,9 +79,9 @@ namespace delta
     {
         face = frame(faceRect);
         cvtColor(face, dst, COLOR_BGR2GRAY);
-		equalizeHist(dst, dst);
-		GaussianBlur(dst, dst, Size(3, 3), 5);
-        Canny(dst, dst, 80, 160);
+		GaussianBlur(dst, dst, Size(3, 3), 9);
+
+        Canny(dst, dst, 60, 120);
 		//morphologyEx(dst, dst, MORPH_GRADIENT, getStructuringElement(MORPH_CROSS, Size(3, 3)));
 		
     }
@@ -146,14 +146,13 @@ namespace delta
 									row_c += row;
 									col_c += col;
 									cout << "counter = " << counter << endl;
-									if(counter++ == 2)
+									if(counter++ == 3)
 									{
 										cout << "horizontal" << endl;
 										motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_UP);
 										motor.moveMotor();
-										time_sleep(0.5);
 									}
-									else if(counter >= 3)
+									if(counter >= 3)
 									{
 										motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_DOWN);
 										motor.moveMotor();
@@ -171,7 +170,6 @@ namespace delta
 					}
 					motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_UP);
 					motor.moveMotor();
-					time_sleep(0.5);
 					//motor.setMotorXYZ(0, 0, Z_UP);
 					//motor.moveMotor();
 					/*imshow("dst", dst);

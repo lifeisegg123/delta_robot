@@ -747,6 +747,33 @@ src/deltaServo.cpp.s:
 	$(MAKE) -f CMakeFiles/delta.dir/build.make CMakeFiles/delta.dir/src/deltaServo.cpp.s
 .PHONY : src/deltaServo.cpp.s
 
+src/empy.o: src/empy.cpp.o
+
+.PHONY : src/empy.o
+
+# target to build an object file
+src/empy.cpp.o:
+	$(MAKE) -f CMakeFiles/delta.dir/build.make CMakeFiles/delta.dir/src/empy.cpp.o
+.PHONY : src/empy.cpp.o
+
+src/empy.i: src/empy.cpp.i
+
+.PHONY : src/empy.i
+
+# target to preprocess a source file
+src/empy.cpp.i:
+	$(MAKE) -f CMakeFiles/delta.dir/build.make CMakeFiles/delta.dir/src/empy.cpp.i
+.PHONY : src/empy.cpp.i
+
+src/empy.s: src/empy.cpp.s
+
+.PHONY : src/empy.s
+
+# target to generate assembly for a file
+src/empy.cpp.s:
+	$(MAKE) -f CMakeFiles/delta.dir/build.make CMakeFiles/delta.dir/src/empy.cpp.s
+.PHONY : src/empy.cpp.s
+
 src/face_detection.o: src/face_detection.cpp.o
 
 .PHONY : src/face_detection.o
@@ -891,6 +918,9 @@ help:
 	@echo "... src/deltaServo.o"
 	@echo "... src/deltaServo.i"
 	@echo "... src/deltaServo.s"
+	@echo "... src/empy.o"
+	@echo "... src/empy.i"
+	@echo "... src/empy.s"
 	@echo "... src/face_detection.o"
 	@echo "... src/face_detection.i"
 	@echo "... src/face_detection.s"

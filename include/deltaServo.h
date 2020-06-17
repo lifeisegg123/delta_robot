@@ -2,8 +2,7 @@
 #define Delta_motor
 #include <math.h>
 #include <array>
-#include <pigpio.h>
-
+#include <empy.h>
 
 namespace delta
 {
@@ -16,14 +15,13 @@ namespace delta
         float x, y, z;
     };
     enum zStatus{
-        Z_DOWN = -368,
+        Z_DOWN = -363,
         Z_UP = -335,
     };
     class DeltaMotor
     {
     public:
         DeltaMotor();
-        float map(const float x, const float in_min = 90, const float in_max = -90, const float out_min = 600, const float out_max = 2400) const;
         std::array<double, 2> angle_yz(const double x0, double y0, const double z0, double theta = 0) const;
         std::array<double, 3> inverse(const double x0, const double y0, const double z0) const;
         void moveMotor();
@@ -45,8 +43,9 @@ namespace delta
         const int f  =  75;
         const float re = 314.6;
         const int rf = 100;
-        
-        float speed;
+
+        EmPy py;
+        bool splitor;
         Points coordinates;
     };
 }

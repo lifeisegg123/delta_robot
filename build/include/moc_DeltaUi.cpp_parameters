@@ -1,3 +1,4 @@
+-I/usr/include/python3.6m
 -I/usr/local/include/opencv4
 -o
 /home/ubuntu/Desktop/delta_robot/build/include/moc_DeltaUi.cpp

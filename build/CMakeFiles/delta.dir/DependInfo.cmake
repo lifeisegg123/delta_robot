@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ubuntu/Desktop/delta_robot/build/include/moc_DeltaUi.cpp" "/home/ubuntu/Desktop/delta_robot/build/CMakeFiles/delta.dir/include/moc_DeltaUi.cpp.o"
   "/home/ubuntu/Desktop/delta_robot/src/DeltaUi.cpp" "/home/ubuntu/Desktop/delta_robot/build/CMakeFiles/delta.dir/src/DeltaUi.cpp.o"
   "/home/ubuntu/Desktop/delta_robot/src/deltaServo.cpp" "/home/ubuntu/Desktop/delta_robot/build/CMakeFiles/delta.dir/src/deltaServo.cpp.o"
+  "/home/ubuntu/Desktop/delta_robot/src/empy.cpp" "/home/ubuntu/Desktop/delta_robot/build/CMakeFiles/delta.dir/src/empy.cpp.o"
   "/home/ubuntu/Desktop/delta_robot/src/face_detection.cpp" "/home/ubuntu/Desktop/delta_robot/build/CMakeFiles/delta.dir/src/face_detection.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
@@ -22,6 +23,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "delta_autogen/include"
+  "/usr/include/python3.6m"
   "/usr/local/include/opencv4"
   "../include"
   "/usr/include/aarch64-linux-gnu/qt5"

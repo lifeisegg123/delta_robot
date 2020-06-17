@@ -18,7 +18,7 @@ set(AM_QT_RCC_EXECUTABLE )
 # MOC settings
 set(AM_MOC_SKIP "/home/ubuntu/Desktop/delta_robot/build/deltaRB_autogen/mocs_compilation.cpp;/home/ubuntu/Desktop/delta_robot/build/delta_autogen/mocs_compilation.cpp;/home/ubuntu/Desktop/delta_robot/build/include/moc_DeltaUi.cpp;/home/ubuntu/Desktop/delta_robot/build/ui_delta.h;/home/ubuntu/Desktop/delta_robot/build/visiontst_autogen/mocs_compilation.cpp;/home/ubuntu/Desktop/delta_robot/include/DeltaUi.h")
 set(AM_MOC_DEFINITIONS "")
-set(AM_MOC_INCLUDES "/home/ubuntu/Desktop/delta_robot/build/visiontst_autogen/include;/usr/local/include/opencv4;/home/ubuntu/Desktop/delta_robot/include")
+set(AM_MOC_INCLUDES "/home/ubuntu/Desktop/delta_robot/build/visiontst_autogen/include;/usr/include/python3.6m;/usr/local/include/opencv4;/home/ubuntu/Desktop/delta_robot/include")
 set(AM_MOC_OPTIONS "")
 set(AM_MOC_RELAXED_MODE "FALSE")
 set(AM_MOC_MACRO_NAMES "Q_OBJECT;Q_GADGET;Q_NAMESPACE")
