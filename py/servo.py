@@ -5,7 +5,7 @@ from DFRobot_RaspberryPi_Expansion_Board import DFRobot_Expansion_Board_Servo as
 
 board = Board(1, 0x10)    # Select i2c bus 1, set address to 0x10
 servo = Servo(board)
-pre_angles = [0, 0, 0]
+
 
 
 def map(x, in_min = 90, in_max = -90, out_min = 0, out_max = 180):
@@ -38,18 +38,42 @@ def connectBoard():
   servo.begin()   # servo control begin
   return 1
 
-
-def moveServo(theta1, theta2, theta3):
-  '''if (splitor == 1):
+pre_angles = [0, 0, 0]
+def moveServo(theta1, theta2, theta3, splitor):
+  global pre_angles
+  
+  if (splitor == 1):
     diff = [theta1-pre_angles[0], theta2-pre_angles[1], theta3-pre_angles[2]]
-    for i in range(1,11):
-      servo.move(0, map(pre_angles[0] + diff[0] * i / 10))
-      servo.move(1, map(pre_angles[1] + diff[1] * i / 10))
-      servo.move(2, map(pre_angles[2] + diff[2] * i / 10))
-      time.sleep(0.01)'''
+    
+    for i in range(1,51):
+      servo.move(0, map(pre_angles[0] + diff[0] * i / 50))
+      servo.move(1, map(pre_angles[1] + diff[1] * i / 50))
+      servo.move(2, map(pre_angles[2] + diff[2] * i / 50))
+      time.sleep(0.001)
+    time.sleep(0.05)
+
   servo.move(0, map(theta1))  #pwm0
   servo.move(1, map(theta2))  #pwm1
   servo.move(2, map(theta3))  #pwm2)
   time.sleep(0.01)
   pre_angles = [theta1, theta2, theta3]
   return 1
+def set0():
+  
+  servo.move(0,map(0))
+  servo.move(1,map(0))
+  servo.move(2,map(0))
+  time.sleep(2)
+
+def set():
+  
+  servo.move(0,map(0))
+  servo.move(1,map(0))
+  servo.move(2,map(0))
+  time.sleep(1)
+  print(map(0))
+  
+if __name__ == "__main__":
+  connectBoard()
+  while True:
+    set()

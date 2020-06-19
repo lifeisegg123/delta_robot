@@ -19,13 +19,14 @@ namespace delta
             int connectBoard();
             int epMoveMotor();
             int epMoveValues();
-            void setAngles(const std::array<double, 3> angles, bool splitor);
+            void setAngles(const std::array<double, 3> angles, int splitor);
+            int epset2Zero();
             ~EmPy();
             
 
         private:
             std::array<double, 3> angles = {0, 0, 0};
-            bool splitor;
+            double splitor;
 
             PyObject *pName, *pModule, *pFunc, *pMove;
             PyObject *pArgs, *pValue;

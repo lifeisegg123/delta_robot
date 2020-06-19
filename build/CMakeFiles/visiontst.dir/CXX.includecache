@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/lee/Desktop/workspace/delta_robot/build/visiontst_autogen/mocs_compilation.cpp
+/home/ubuntu/Desktop/workspace/delta_robot/build/visiontst_autogen/mocs_compilation.cpp
 
-/home/lee/Desktop/workspace/delta_robot/vision_test.cpp
+/home/ubuntu/Desktop/workspace/delta_robot/vision_test.cpp
 opencv2/opencv.hpp
-/home/lee/Desktop/workspace/delta_robot/opencv2/opencv.hpp
+/home/ubuntu/Desktop/workspace/delta_robot/opencv2/opencv.hpp
 
 /usr/local/include/opencv4/opencv2/calib3d.hpp
 opencv2/core.hpp

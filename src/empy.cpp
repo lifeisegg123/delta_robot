@@ -20,7 +20,6 @@ namespace delta
 
                 Py_XDECREF(connectBoard);
             }
-            //Py_XDECREF(pModule);
         }
     }
     int EmPy::epMoveMotor()
@@ -29,17 +28,33 @@ namespace delta
         {
             PyObject* moveServo = PyObject_GetAttrString(pModule, "moveServo");
 
-            if(moveServo) 
+            if(moveServo)
             {
-            PyObject *r = PyObject_CallFunction(moveServo, "iii", 0, 0, 0);
+                PyObject *r = PyObject_CallFunction(moveServo, "dddd", angles[0], angles[1], angles[2], splitor);
 
-            if(r) 
+                if(r) 
+                {
+                    Py_XDECREF(r);
+                }
+                Py_XDECREF(moveServo);
+            }
+        }
+    }
+    int EmPy::epset2Zero()
+    {
+        if(pModule) 
+        {
+            PyObject* moveServo = PyObject_GetAttrString(pModule, "set0");
+
+            if(moveServo)
             {
-                Py_XDECREF(r);
+                PyObject *r = PyObject_CallFunction(moveServo, NULL);
+                if(r) 
+                {
+                    Py_XDECREF(r);
+                }
+                Py_XDECREF(moveServo);
             }
-            Py_XDECREF(moveServo);
-            }
-            //Py_XDECREF(mydef);
         }
     }
     EmPy::EmPy()
@@ -171,7 +186,7 @@ namespace delta
 
     }*/
 
-    void EmPy::setAngles(const std::array<double, 3> angles, bool splitor)
+    void EmPy::setAngles(const std::array<double, 3> angles, int splitor)
     {
         this -> angles = angles;
         this -> splitor = splitor;
@@ -179,6 +194,7 @@ namespace delta
 
     EmPy::~EmPy()
     {
+        Py_XDECREF(pModule);
         Py_Finalize();
     }
 

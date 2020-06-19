@@ -1,5 +1,6 @@
 import time
-
+def map_s(x, in_min = 0, in_max = 180, out_min = 592, out_max = 2448):
+  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min
 _PWM_CHAN_COUNT = 4
 _ADC_CHAN_COUNT = 4
 
@@ -259,8 +260,7 @@ class DFRobot_Expansion_Board_Servo():
       @param angle: int   Angle to move, in range 0 to 180
     '''
     if 0 <= angle <= 180:
-      self._board.set_pwm_duty(id, (0.5 + (float(angle) / 90.0)) / 20 * 100)
-
+      self._board.set_pwm_duty(id, (map_s(angle)) / 200)
 import smbus
 
 class DFRobot_Expansion_Board_IIC(DFRobot_Expansion_Board):

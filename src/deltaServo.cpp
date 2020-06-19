@@ -44,31 +44,31 @@ namespace delta{
     }
     void DeltaMotor::set2Zero()
     {
-        py.epMoveMotor();
+        py.epset2Zero();
     }
     
     void DeltaMotor::moveMotor()
     {
         
         std::array<double,3> angles = inverse(coordinates.x,coordinates.y,coordinates.z);
-        std::cout << "new" << std::endl;
-        for (auto i : angles)
+        //std::cout << "new" << std::endl;
+        /*for (auto i : angles)
         {
             std::cout << i << std::endl;
-        }
+        }*/
 
         py.setAngles(angles, splitor);
         py.epMoveMotor();
     }
     void DeltaMotor::setMotorXYZ(const float x, const float y, const float z)
     {
-        if(coordinates.z == Z_UP && z == Z_DOWN)
+        if(coordinates.z != z)
         {
-            splitor = true;
+            splitor = 1;
         }
         else
         {
-            splitor = false;
+            splitor = 0;
         }
         
         coordinates.x = x;

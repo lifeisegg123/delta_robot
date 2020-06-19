@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
-  "visiontst_autogen"
-  "CMakeFiles/visiontst_autogen.dir/AutogenOldSettings.cmake"
-  "deltaRB_autogen"
-  "CMakeFiles/deltaRB_autogen.dir/AutogenOldSettings.cmake"
+  "motor_autogen"
+  "CMakeFiles/motor_autogen.dir/AutogenOldSettings.cmake"
   "delta_autogen"
   "CMakeFiles/delta_autogen.dir/AutogenOldSettings.cmake"
+  "deltaRB_autogen"
+  "CMakeFiles/deltaRB_autogen.dir/AutogenOldSettings.cmake"
+  "visiontst_autogen"
+  "CMakeFiles/visiontst_autogen.dir/AutogenOldSettings.cmake"
   "CMakeFiles/ExperimentalBuild"
 )
 

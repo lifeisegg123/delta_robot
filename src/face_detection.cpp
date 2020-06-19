@@ -1,4 +1,5 @@
 #include "face_detection.h"
+#include <unistd.h>
 namespace delta
 {
     FaceDetector::FaceDetector(const int cam_number) : cap(cam_number)
@@ -105,11 +106,7 @@ namespace delta
 					p[k] = 0;
 					int row_c = j;
 					int col_c = k;
-					/*
-					motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_UP);
-					motor.moveMotor();
-					motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_DOWN);
-					motor.moveMotor();*/
+			
 					
 					bool endwhile = true;
 					int counter = 1;
@@ -145,17 +142,21 @@ namespace delta
 									endflag = true;
 									row_c += row;
 									col_c += col;
-									cout << "counter = " << counter << endl;
-									if(counter++ == 3)
+									if(++counter == 3)
 									{
-										cout << "horizontal" << endl;
 										motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_UP);
 										motor.moveMotor();
+										usleep(500000);
 									}
 									if(counter >= 3)
 									{
+										motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_UP);
+										motor.moveMotor();
 										motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_DOWN);
 										motor.moveMotor();
+										motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_UP);
+										motor.moveMotor();
+										
 										*new_p = 0;
 										break;
 									}
@@ -168,8 +169,10 @@ namespace delta
 						}
 						endwhile = endflag;
 					}
+					usleep(500000);
 					motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_UP);
 					motor.moveMotor();
+					usleep(500000);
 					//motor.setMotorXYZ(0, 0, Z_UP);
 					//motor.moveMotor();
 					/*imshow("dst", dst);
@@ -178,6 +181,7 @@ namespace delta
 				}
 			}
 		}
+		motor.set2Zero();
 	}
 	int FaceDetector::showImages()
 	{

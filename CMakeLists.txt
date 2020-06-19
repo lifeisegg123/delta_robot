@@ -31,6 +31,9 @@ target_link_libraries(deltaRB delta ${OpenCV_LIBS} Qt5::Core Qt5::Gui Qt5::Widge
 add_executable(visiontst vision_test.cpp )
 target_link_libraries(visiontst ${OpenCV_LIBS})
 
+add_executable(motor motortest.cpp )
+target_link_libraries(motor delta ${PYTHON_LIBRARIES})
+
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

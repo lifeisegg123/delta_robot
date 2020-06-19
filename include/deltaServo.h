@@ -15,8 +15,8 @@ namespace delta
         float x, y, z;
     };
     enum zStatus{
-        Z_DOWN = -363,
-        Z_UP = -335,
+        Z_DOWN = -342,
+        Z_UP = -322,
     };
     class DeltaMotor
     {
@@ -45,7 +45,7 @@ namespace delta
         const int rf = 100;
 
         EmPy py;
-        bool splitor;
+        int splitor;
         Points coordinates;
     };
 }
