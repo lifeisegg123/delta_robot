@@ -60,9 +60,9 @@ def moveServo(theta1, theta2, theta3, splitor):
   return 1
 def set0():
   
-  servo.move(0,map(0))
-  servo.move(1,map(0))
-  servo.move(2,map(0))
+  servo.move(0,map(-20))
+  servo.move(1,map(-20))
+  servo.move(2,map(-20))
   time.sleep(2)
 
 def set():
