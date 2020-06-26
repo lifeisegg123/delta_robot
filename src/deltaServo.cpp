@@ -52,10 +52,10 @@ namespace delta{
         
         std::array<double,3> angles = inverse(coordinates.x,coordinates.y,coordinates.z);
         //std::cout << "new" << std::endl;
-        /*for (auto i : angles)
+        for (auto i : angles)
         {
             std::cout << i << std::endl;
-        }*/
+        }
 
         py.setAngles(angles, splitor);
         py.epMoveMotor();

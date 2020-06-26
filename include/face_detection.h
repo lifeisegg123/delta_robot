@@ -12,7 +12,7 @@ namespace delta
     class FaceDetector
     {
     public:
-        FaceDetector(const int cam_number = 1);
+        FaceDetector(const int cam_number = 0);
         int init();
         int getImage();
         void detectFace();
