@@ -70,10 +70,43 @@ namespace delta{
         {
             splitor = 0;
         }
-        
+        switch (int(x) / 10)
+        {
+        case -1:
+            coordinates.z = z + 0.5;
+            break;
+        case -2:
+            coordinates.z = z + 1;
+            break;
+        case -3:
+            coordinates.z = z + 1.5;
+            break;
+        case -4:
+            coordinates.z = z + 2;
+            break;
+        case -5:
+            coordinates.z = z + 2.5;
+            break;
+        case -6:
+            coordinates.z = z + 3;
+            break;
+        case -7:
+            coordinates.z = z + 3.5;
+            break;
+        case -8:
+            coordinates.z = z + 4;
+            break;
+        case -9:
+            coordinates.z = z + 4.5;
+            break;
+        default:
+            coordinates.z = z;
+            break;
+        }
         coordinates.x = x;
-        coordinates.y = y;
-        coordinates.z = z;
+        coordinates.y = -y;
+        //coordinates.z = z;
+
         std::cout << "x = " << x << "y = " << y << "z = " << z << std::endl;
     }
     

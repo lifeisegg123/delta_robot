@@ -144,17 +144,17 @@ namespace delta
 									col_c += col;
 									if(++counter == 3)
 									{
-										motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_UP);
+										motor.setMotorXYZ(col_c - face.cols / 2, row_c - face.rows / 2, Z_UP);
 										motor.moveMotor();
 										usleep(100000);
 									}
 									if(counter >= 3)
 									{
-										motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_UP);
+										motor.setMotorXYZ(col_c - face.cols / 2, row_c - face.rows / 2, Z_UP);
 										motor.moveMotor();
-										motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_DOWN);
+										motor.setMotorXYZ(col_c - face.cols / 2, row_c - face.rows / 2, Z_DOWN);
 										motor.moveMotor();
-										motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_UP);
+										motor.setMotorXYZ(col_c - face.cols / 2, row_c - face.rows / 2, Z_UP);
 										motor.moveMotor();
 										
 										*new_p = 0;
@@ -170,7 +170,7 @@ namespace delta
 						endwhile = endflag;
 					}
 					usleep(100000);
-					motor.setMotorXYZ(row_c - face.rows / 2, col_c - face.cols / 2, Z_UP);
+					motor.setMotorXYZ(col_c - face.cols / 2, row_c - face.rows / 2, Z_UP);
 					motor.moveMotor();
 					usleep(100000);
 					//motor.setMotorXYZ(0, 0, Z_UP);

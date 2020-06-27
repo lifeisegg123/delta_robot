@@ -51,7 +51,16 @@ def moveServo(theta1, theta2, theta3, splitor):
       servo.move(2, map(pre_angles[2] + diff[2] * i / 50))
       time.sleep(0.001)
     time.sleep(0.05)
-
+  '''
+  else:
+    diff = [theta1-pre_angles[0], theta2-pre_angles[1], theta3-pre_angles[2]]
+    for i in range(1,51):
+      servo.move(0, map(pre_angles[0] + diff[0] * i / 50))
+      servo.move(1, map(pre_angles[1] + diff[1] * i / 50))
+      servo.move(2, map(pre_angles[2] + diff[2] * i / 50))
+      time.sleep(0.001)
+    time.sleep(0.05)
+  '''
   servo.move(0, map(theta1))  #pwm0
   servo.move(1, map(theta2))  #pwm1
   servo.move(2, map(theta3))  #pwm2)
@@ -60,9 +69,9 @@ def moveServo(theta1, theta2, theta3, splitor):
   return 1
 def set0():
   
-  servo.move(0,map(-20))
-  servo.move(1,map(-20))
-  servo.move(2,map(-20))
+  servo.move(0,map(-10))
+  servo.move(1,map(-10))
+  servo.move(2,map(-10))
   time.sleep(2)
 
 def set():
