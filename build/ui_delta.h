@@ -20,27 +20,31 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_Delta
+class Ui_DeltaUi
 {
 public:
     QPushButton *getImage;
     QPushButton *runDrawing;
-    QGraphicsView *picture;
+    QGraphicsView *Whole;
+    QGraphicsView *Face;
 
     void setupUi(QWidget *DeltaUi)
     {
         if (DeltaUi->objectName().isEmpty())
             DeltaUi->setObjectName(QStringLiteral("DeltaUi"));
-        DeltaUi->resize(811, 501);
+        DeltaUi->resize(1069, 660);
         getImage = new QPushButton(DeltaUi);
         getImage->setObjectName(QStringLiteral("getImage"));
-        getImage->setGeometry(QRect(180, 380, 151, 81));
+        getImage->setGeometry(QRect(250, 440, 151, 81));
         runDrawing = new QPushButton(DeltaUi);
         runDrawing->setObjectName(QStringLiteral("runDrawing"));
-        runDrawing->setGeometry(QRect(480, 380, 151, 81));
-        picture = new QGraphicsView(DeltaUi);
-        picture->setObjectName(QStringLiteral("picture"));
-        picture->setGeometry(QRect(180, 40, 451, 321));
+        runDrawing->setGeometry(QRect(650, 440, 151, 81));
+        Whole = new QGraphicsView(DeltaUi);
+        Whole->setObjectName(QStringLiteral("Whole"));
+        Whole->setGeometry(QRect(90, 70, 431, 291));
+        Face = new QGraphicsView(DeltaUi);
+        Face->setObjectName(QStringLiteral("Face"));
+        Face->setGeometry(QRect(550, 70, 431, 291));
 
         retranslateUi(DeltaUi);
 
@@ -49,15 +53,15 @@ public:
 
     void retranslateUi(QWidget *DeltaUi)
     {
-        DeltaUi->setWindowTitle(QApplication::translate("Delta", "Form", Q_NULLPTR));
-        getImage->setText(QApplication::translate("Delta", "get Image", Q_NULLPTR));
-        runDrawing->setText(QApplication::translate("Delta", "runDrawing", Q_NULLPTR));
+        DeltaUi->setWindowTitle(QApplication::translate("DeltaUi", "Form", Q_NULLPTR));
+        getImage->setText(QApplication::translate("DeltaUi", "get Image", Q_NULLPTR));
+        runDrawing->setText(QApplication::translate("DeltaUi", "runDrawing", Q_NULLPTR));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class Delta: public Ui_Delta {};
+    class DeltaUi: public Ui_DeltaUi {};
 } // namespace Ui
 
 QT_END_NAMESPACE

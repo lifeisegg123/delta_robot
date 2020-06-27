@@ -44,10 +44,10 @@ namespace delta
 			if (confidence > 0.5)
 			{
 
-				int x1 = cvRound(detect.at<float>(i, 3) * frame.cols - 15);
-				int y1 = cvRound(detect.at<float>(i, 4) * frame.rows - 15);
-				int x2 = cvRound(detect.at<float>(i, 5) * frame.cols + 15);
-				int y2 = cvRound(detect.at<float>(i, 6) * frame.rows + 15);
+				int x1 = cvRound(detect.at<float>(i, 3) * frame.cols - 10);
+				int y1 = cvRound(detect.at<float>(i, 4) * frame.rows - 30);
+				int x2 = cvRound(detect.at<float>(i, 5) * frame.cols + 10);
+				int y2 = cvRound(detect.at<float>(i, 6) * frame.rows + 5);
 				
 				if (x1 <= 0)
 				{

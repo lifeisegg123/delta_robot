@@ -11,18 +11,25 @@ namespace delta
     {
         fd->getImage();
         fd->detectFace();
-        Mat frame = fd->getDst();
+        Mat frame = fd->getFrame();
         Mat2QImage(frame);
         QGraphicsScene* scene = new QGraphicsScene(this);
-        picture->setScene(scene);
+        Whole->setScene(scene);
         scene->addPixmap(QPixmap::fromImage(Mat2QImage(frame)));
+
+        Mat face = fd->getDst();
+        Mat2QImage(face);
+        QGraphicsScene* face_scene = new QGraphicsScene(this);
+        Face->setScene(face_scene);
+        face_scene->addPixmap(QPixmap::fromImage(Mat2QImage(face)));
+
     }
     void DeltaUi::on_runDrawing_clicked()
     {
         Mat frame = fd->getDst();
         Mat2QImage(frame);
         QGraphicsScene* scene = new QGraphicsScene(this);
-        picture->setScene(scene);
+        //picture->setScene(scene);
         scene->addPixmap(QPixmap::fromImage(Mat2QImage(frame)));
         fd->searchPixel();
     }

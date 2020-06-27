@@ -4,7 +4,7 @@
 #include <QMessageBox>
 #include "face_detection.h"
 namespace delta {
-    class DeltaUi: public QWidget, public Ui_Delta
+    class DeltaUi: public QWidget, public Ui_DeltaUi
     {
     Q_OBJECT
     public:
