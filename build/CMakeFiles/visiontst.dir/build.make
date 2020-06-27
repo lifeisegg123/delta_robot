@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/Desktop/workspace/delta_robot
+CMAKE_SOURCE_DIR = /home/lee/Desktop/workspace/delta_robot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/Desktop/workspace/delta_robot/build
+CMAKE_BINARY_DIR = /home/lee/Desktop/workspace/delta_robot/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/visiontst.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/visiontst.dir/flags.make
 
 CMakeFiles/visiontst.dir/vision_test.cpp.o: CMakeFiles/visiontst.dir/flags.make
 CMakeFiles/visiontst.dir/vision_test.cpp.o: ../vision_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/workspace/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/visiontst.dir/vision_test.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/visiontst.dir/vision_test.cpp.o -c /home/ubuntu/Desktop/workspace/delta_robot/vision_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/visiontst.dir/vision_test.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/visiontst.dir/vision_test.cpp.o -c /home/lee/Desktop/workspace/delta_robot/vision_test.cpp
 
 CMakeFiles/visiontst.dir/vision_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/visiontst.dir/vision_test.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Desktop/workspace/delta_robot/vision_test.cpp > CMakeFiles/visiontst.dir/vision_test.cpp.i
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lee/Desktop/workspace/delta_robot/vision_test.cpp > CMakeFiles/visiontst.dir/vision_test.cpp.i
 
 CMakeFiles/visiontst.dir/vision_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/visiontst.dir/vision_test.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Desktop/workspace/delta_robot/vision_test.cpp -o CMakeFiles/visiontst.dir/vision_test.cpp.s
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lee/Desktop/workspace/delta_robot/vision_test.cpp -o CMakeFiles/visiontst.dir/vision_test.cpp.s
 
 CMakeFiles/visiontst.dir/vision_test.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/visiontst.dir/vision_test.cpp.o.provides.build: CMakeFiles/visiontst.
 
 CMakeFiles/visiontst.dir/visiontst_autogen/mocs_compilation.cpp.o: CMakeFiles/visiontst.dir/flags.make
 CMakeFiles/visiontst.dir/visiontst_autogen/mocs_compilation.cpp.o: visiontst_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/workspace/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/visiontst.dir/visiontst_autogen/mocs_compilation.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/visiontst.dir/visiontst_autogen/mocs_compilation.cpp.o -c /home/ubuntu/Desktop/workspace/delta_robot/build/visiontst_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/visiontst.dir/visiontst_autogen/mocs_compilation.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/visiontst.dir/visiontst_autogen/mocs_compilation.cpp.o -c /home/lee/Desktop/workspace/delta_robot/build/visiontst_autogen/mocs_compilation.cpp
 
 CMakeFiles/visiontst.dir/visiontst_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/visiontst.dir/visiontst_autogen/mocs_compilation.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Desktop/workspace/delta_robot/build/visiontst_autogen/mocs_compilation.cpp > CMakeFiles/visiontst.dir/visiontst_autogen/mocs_compilation.cpp.i
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lee/Desktop/workspace/delta_robot/build/visiontst_autogen/mocs_compilation.cpp > CMakeFiles/visiontst.dir/visiontst_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/visiontst.dir/visiontst_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/visiontst.dir/visiontst_autogen/mocs_compilation.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Desktop/workspace/delta_robot/build/visiontst_autogen/mocs_compilation.cpp -o CMakeFiles/visiontst.dir/visiontst_autogen/mocs_compilation.cpp.s
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lee/Desktop/workspace/delta_robot/build/visiontst_autogen/mocs_compilation.cpp -o CMakeFiles/visiontst.dir/visiontst_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/visiontst.dir/visiontst_autogen/mocs_compilation.cpp.o.requires:
 
@@ -168,7 +168,7 @@ visiontst: /usr/local/lib/libopencv_photo.so.4.3.0
 visiontst: /usr/local/lib/libopencv_imgproc.so.4.3.0
 visiontst: /usr/local/lib/libopencv_core.so.4.3.0
 visiontst: CMakeFiles/visiontst.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/Desktop/workspace/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable visiontst"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable visiontst"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/visiontst.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -186,6 +186,6 @@ CMakeFiles/visiontst.dir/clean:
 .PHONY : CMakeFiles/visiontst.dir/clean
 
 CMakeFiles/visiontst.dir/depend:
-	cd /home/ubuntu/Desktop/workspace/delta_robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/Desktop/workspace/delta_robot /home/ubuntu/Desktop/workspace/delta_robot /home/ubuntu/Desktop/workspace/delta_robot/build /home/ubuntu/Desktop/workspace/delta_robot/build /home/ubuntu/Desktop/workspace/delta_robot/build/CMakeFiles/visiontst.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lee/Desktop/workspace/delta_robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lee/Desktop/workspace/delta_robot /home/lee/Desktop/workspace/delta_robot /home/lee/Desktop/workspace/delta_robot/build /home/lee/Desktop/workspace/delta_robot/build /home/lee/Desktop/workspace/delta_robot/build/CMakeFiles/visiontst.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/visiontst.dir/depend
 

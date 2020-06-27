@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/Desktop/workspace/delta_robot/build/motor_autogen/mocs_compilation.cpp" "/home/ubuntu/Desktop/workspace/delta_robot/build/CMakeFiles/motor.dir/motor_autogen/mocs_compilation.cpp.o"
-  "/home/ubuntu/Desktop/workspace/delta_robot/motortest.cpp" "/home/ubuntu/Desktop/workspace/delta_robot/build/CMakeFiles/motor.dir/motortest.cpp.o"
+  "/home/lee/Desktop/workspace/delta_robot/build/motor_autogen/mocs_compilation.cpp" "/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles/motor.dir/motor_autogen/mocs_compilation.cpp.o"
+  "/home/lee/Desktop/workspace/delta_robot/motortest.cpp" "/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles/motor.dir/motortest.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,16 +22,16 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/python3.6m"
   "/usr/local/include/opencv4"
   "../include"
-  "/usr/include/aarch64-linux-gnu/qt5"
-  "/usr/include/aarch64-linux-gnu/qt5/QtCore"
-  "/usr/lib/aarch64-linux-gnu/qt5/mkspecs/linux-g++"
-  "/usr/include/aarch64-linux-gnu/qt5/QtGui"
-  "/usr/include/aarch64-linux-gnu/qt5/QtWidgets"
+  "/usr/include/x86_64-linux-gnu/qt5"
+  "/usr/include/x86_64-linux-gnu/qt5/QtCore"
+  "/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"
+  "/usr/include/x86_64-linux-gnu/qt5/QtGui"
+  "/usr/include/x86_64-linux-gnu/qt5/QtWidgets"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ubuntu/Desktop/workspace/delta_robot/build/CMakeFiles/delta.dir/DependInfo.cmake"
+  "/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles/delta.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/Desktop/workspace/delta_robot/vision_test.cpp" "/home/ubuntu/Desktop/workspace/delta_robot/build/CMakeFiles/visiontst.dir/vision_test.cpp.o"
-  "/home/ubuntu/Desktop/workspace/delta_robot/build/visiontst_autogen/mocs_compilation.cpp" "/home/ubuntu/Desktop/workspace/delta_robot/build/CMakeFiles/visiontst.dir/visiontst_autogen/mocs_compilation.cpp.o"
+  "/home/lee/Desktop/workspace/delta_robot/vision_test.cpp" "/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles/visiontst.dir/vision_test.cpp.o"
+  "/home/lee/Desktop/workspace/delta_robot/build/visiontst_autogen/mocs_compilation.cpp" "/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles/visiontst.dir/visiontst_autogen/mocs_compilation.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

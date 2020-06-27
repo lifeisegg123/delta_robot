@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/Desktop/workspace/delta_robot
+CMAKE_SOURCE_DIR = /home/lee/Desktop/workspace/delta_robot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/Desktop/workspace/delta_robot/build
+CMAKE_BINARY_DIR = /home/lee/Desktop/workspace/delta_robot/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/motor.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/motor.dir/flags.make
 
 CMakeFiles/motor.dir/motortest.cpp.o: CMakeFiles/motor.dir/flags.make
 CMakeFiles/motor.dir/motortest.cpp.o: ../motortest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/workspace/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/motor.dir/motortest.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/motor.dir/motortest.cpp.o -c /home/ubuntu/Desktop/workspace/delta_robot/motortest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/motor.dir/motortest.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/motor.dir/motortest.cpp.o -c /home/lee/Desktop/workspace/delta_robot/motortest.cpp
 
 CMakeFiles/motor.dir/motortest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motor.dir/motortest.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Desktop/workspace/delta_robot/motortest.cpp > CMakeFiles/motor.dir/motortest.cpp.i
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lee/Desktop/workspace/delta_robot/motortest.cpp > CMakeFiles/motor.dir/motortest.cpp.i
 
 CMakeFiles/motor.dir/motortest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motor.dir/motortest.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Desktop/workspace/delta_robot/motortest.cpp -o CMakeFiles/motor.dir/motortest.cpp.s
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lee/Desktop/workspace/delta_robot/motortest.cpp -o CMakeFiles/motor.dir/motortest.cpp.s
 
 CMakeFiles/motor.dir/motortest.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/motor.dir/motortest.cpp.o.provides.build: CMakeFiles/motor.dir/motort
 
 CMakeFiles/motor.dir/motor_autogen/mocs_compilation.cpp.o: CMakeFiles/motor.dir/flags.make
 CMakeFiles/motor.dir/motor_autogen/mocs_compilation.cpp.o: motor_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/workspace/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/motor.dir/motor_autogen/mocs_compilation.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/motor.dir/motor_autogen/mocs_compilation.cpp.o -c /home/ubuntu/Desktop/workspace/delta_robot/build/motor_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/motor.dir/motor_autogen/mocs_compilation.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/motor.dir/motor_autogen/mocs_compilation.cpp.o -c /home/lee/Desktop/workspace/delta_robot/build/motor_autogen/mocs_compilation.cpp
 
 CMakeFiles/motor.dir/motor_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motor.dir/motor_autogen/mocs_compilation.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Desktop/workspace/delta_robot/build/motor_autogen/mocs_compilation.cpp > CMakeFiles/motor.dir/motor_autogen/mocs_compilation.cpp.i
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lee/Desktop/workspace/delta_robot/build/motor_autogen/mocs_compilation.cpp > CMakeFiles/motor.dir/motor_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/motor.dir/motor_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motor.dir/motor_autogen/mocs_compilation.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Desktop/workspace/delta_robot/build/motor_autogen/mocs_compilation.cpp -o CMakeFiles/motor.dir/motor_autogen/mocs_compilation.cpp.s
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lee/Desktop/workspace/delta_robot/build/motor_autogen/mocs_compilation.cpp -o CMakeFiles/motor.dir/motor_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/motor.dir/motor_autogen/mocs_compilation.cpp.o.requires:
 
@@ -117,12 +117,12 @@ motor: CMakeFiles/motor.dir/motortest.cpp.o
 motor: CMakeFiles/motor.dir/motor_autogen/mocs_compilation.cpp.o
 motor: CMakeFiles/motor.dir/build.make
 motor: libdelta.a
-motor: /usr/lib/aarch64-linux-gnu/libpython3.6m.so
-motor: /usr/lib/aarch64-linux-gnu/libQt5Widgets.so.5.9.5
-motor: /usr/lib/aarch64-linux-gnu/libQt5Gui.so.5.9.5
-motor: /usr/lib/aarch64-linux-gnu/libQt5Core.so.5.9.5
+motor: /usr/lib/x86_64-linux-gnu/libpython3.6m.so
+motor: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.9.5
+motor: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.9.5
+motor: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5
 motor: CMakeFiles/motor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/Desktop/workspace/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable motor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable motor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/motor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -140,6 +140,6 @@ CMakeFiles/motor.dir/clean:
 .PHONY : CMakeFiles/motor.dir/clean
 
 CMakeFiles/motor.dir/depend:
-	cd /home/ubuntu/Desktop/workspace/delta_robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/Desktop/workspace/delta_robot /home/ubuntu/Desktop/workspace/delta_robot /home/ubuntu/Desktop/workspace/delta_robot/build /home/ubuntu/Desktop/workspace/delta_robot/build /home/ubuntu/Desktop/workspace/delta_robot/build/CMakeFiles/motor.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lee/Desktop/workspace/delta_robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lee/Desktop/workspace/delta_robot /home/lee/Desktop/workspace/delta_robot /home/lee/Desktop/workspace/delta_robot/build /home/lee/Desktop/workspace/delta_robot/build /home/lee/Desktop/workspace/delta_robot/build/CMakeFiles/motor.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/motor.dir/depend
 

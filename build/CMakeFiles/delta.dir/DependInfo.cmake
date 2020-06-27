@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/Desktop/workspace/delta_robot/build/delta_autogen/mocs_compilation.cpp" "/home/ubuntu/Desktop/workspace/delta_robot/build/CMakeFiles/delta.dir/delta_autogen/mocs_compilation.cpp.o"
-  "/home/ubuntu/Desktop/workspace/delta_robot/build/include/moc_DeltaUi.cpp" "/home/ubuntu/Desktop/workspace/delta_robot/build/CMakeFiles/delta.dir/include/moc_DeltaUi.cpp.o"
-  "/home/ubuntu/Desktop/workspace/delta_robot/src/DeltaUi.cpp" "/home/ubuntu/Desktop/workspace/delta_robot/build/CMakeFiles/delta.dir/src/DeltaUi.cpp.o"
-  "/home/ubuntu/Desktop/workspace/delta_robot/src/deltaServo.cpp" "/home/ubuntu/Desktop/workspace/delta_robot/build/CMakeFiles/delta.dir/src/deltaServo.cpp.o"
-  "/home/ubuntu/Desktop/workspace/delta_robot/src/empy.cpp" "/home/ubuntu/Desktop/workspace/delta_robot/build/CMakeFiles/delta.dir/src/empy.cpp.o"
-  "/home/ubuntu/Desktop/workspace/delta_robot/src/face_detection.cpp" "/home/ubuntu/Desktop/workspace/delta_robot/build/CMakeFiles/delta.dir/src/face_detection.cpp.o"
+  "/home/lee/Desktop/workspace/delta_robot/build/delta_autogen/mocs_compilation.cpp" "/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles/delta.dir/delta_autogen/mocs_compilation.cpp.o"
+  "/home/lee/Desktop/workspace/delta_robot/build/include/moc_DeltaUi.cpp" "/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles/delta.dir/include/moc_DeltaUi.cpp.o"
+  "/home/lee/Desktop/workspace/delta_robot/src/DeltaUi.cpp" "/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles/delta.dir/src/DeltaUi.cpp.o"
+  "/home/lee/Desktop/workspace/delta_robot/src/deltaServo.cpp" "/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles/delta.dir/src/deltaServo.cpp.o"
+  "/home/lee/Desktop/workspace/delta_robot/src/empy.cpp" "/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles/delta.dir/src/empy.cpp.o"
+  "/home/lee/Desktop/workspace/delta_robot/src/face_detection.cpp" "/home/lee/Desktop/workspace/delta_robot/build/CMakeFiles/delta.dir/src/face_detection.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -26,11 +26,11 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/python3.6m"
   "/usr/local/include/opencv4"
   "../include"
-  "/usr/include/aarch64-linux-gnu/qt5"
-  "/usr/include/aarch64-linux-gnu/qt5/QtCore"
-  "/usr/lib/aarch64-linux-gnu/qt5/mkspecs/linux-g++"
-  "/usr/include/aarch64-linux-gnu/qt5/QtGui"
-  "/usr/include/aarch64-linux-gnu/qt5/QtWidgets"
+  "/usr/include/x86_64-linux-gnu/qt5"
+  "/usr/include/x86_64-linux-gnu/qt5/QtCore"
+  "/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"
+  "/usr/include/x86_64-linux-gnu/qt5/QtGui"
+  "/usr/include/x86_64-linux-gnu/qt5/QtWidgets"
   )
 
 # Targets to which this target links.
