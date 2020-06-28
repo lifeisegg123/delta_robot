@@ -44,9 +44,9 @@ namespace delta
 			if (confidence > 0.5)
 			{
 
-				int x1 = cvRound(detect.at<float>(i, 3) * frame.cols - 10);
+				int x1 = cvRound(detect.at<float>(i, 3) * frame.cols - 5);
 				int y1 = cvRound(detect.at<float>(i, 4) * frame.rows - 30);
-				int x2 = cvRound(detect.at<float>(i, 5) * frame.cols + 10);
+				int x2 = cvRound(detect.at<float>(i, 5) * frame.cols + 5);
 				int y2 = cvRound(detect.at<float>(i, 6) * frame.rows + 5);
 				
 				if (x1 <= 0)
@@ -81,17 +81,11 @@ namespace delta
         face = frame(faceRect);
         cvtColor(face, dst, COLOR_BGR2GRAY);
 		GaussianBlur(dst, dst, Size(3, 3), 9);
-
         Canny(dst, dst, 60, 120);
-		//morphologyEx(dst, dst, MORPH_GRADIENT, getStructuringElement(MORPH_CROSS, Size(3, 3)));
-		
     }
     void FaceDetector::putLabel(const float &confidence, const int &x, const int &y)
     {
         rectangle(frame, faceRect, Scalar(0, 255, 0));
-        //String label = format("Face: %4.3f", confidence);
-        //putText(frame, label, Point(x, y+30), FONT_HERSHEY_SIMPLEX, 0.8, Scalar(0, 255, 0));
-
     }
 	void FaceDetector::searchPixel()
 	{
@@ -106,7 +100,6 @@ namespace delta
 					p[k] = 0;
 					int row_c = j;
 					int col_c = k;
-			
 					
 					bool endwhile = true;
 					int counter = 1;
@@ -173,11 +166,6 @@ namespace delta
 					motor.setMotorXYZ(col_c - face.cols / 2, row_c - face.rows / 2, Z_UP);
 					motor.moveMotor();
 					usleep(100000);
-					//motor.setMotorXYZ(0, 0, Z_UP);
-					//motor.moveMotor();
-					/*imshow("dst", dst);
-					while(waitKey() == 27)
-					{}*/
 				}
 			}
 		}
@@ -192,10 +180,18 @@ namespace delta
 	}
 	Mat FaceDetector::getFrame()const
 	{
-		return frame;
+		Mat resized;
+		resize(frame, resized, Size(425, 285));
+		return resized;
 	}
 	Mat FaceDetector::getDst()const
 	{
-		return dst;
+		if (dst.empty())
+		{
+			return Mat(285, 425, CV_8UC1);
+		}
+		Mat resized;
+		resize(dst, resized, Size(dst.cols * 285 / dst.rows, 285));
+		return resized;
 	}
 }

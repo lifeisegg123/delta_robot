@@ -6,34 +6,21 @@ using namespace std;
 int main()
 {
 	VideoCapture cap(0);
-	cap.set(3, 320);
-	cap.set(4, 240);
-	Mat src, mid, cent, dst;
+	cap.set(3, 640);
+	cap.set(4, 480);
+	Mat src, blur, edge;
 	
-	Mat blurred;
 
 	while(true)
 	{
 		cap >> src;
 
 		cvtColor(src, src, COLOR_BGR2GRAY);
-		equalizeHist(src, mid);
-		GaussianBlur(mid, blurred, Size(3, 3), 5);
-		mid = (1 + 0.8) * src - 0.8 * blurred;
-		//GaussianBlur(mid, blurred, Size(5, 5), 7);
-		
-		/*
-		String desc = format("sigma : %d", 7);
-		putText(src , desc, Point(10, 30), FONT_HERSHEY_SIMPLEX, 1.0, Scalar(255), 1, LINE_AA);
-		*/
-	
-		Canny(mid, dst, 200, 255);
-		//morphologyEx(dst, dst, MORPH_GRADIENT, getStructuringElement(MORPH_CROSS, Size(3, 3)));
-	
-
+		//GaussianBlur(src, blur, Size(3, 3), 9);
+		Canny(src, edge, 60, 120);
 		imshow("src", src);
-		imshow("mid", mid);
-		imshow("dst", dst);
+		//imshow("blur", blur);
+		imshow("edge", edge);
 		if (waitKey(27) == 0)
 		{
 			break;
